@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load compile_static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ STATIC_URL}}{% compile "../static/styles/index.less" %}" />
+{% endblock %}
+
+{% block title %}
+    Индекс страничка
+{% endblock %}
+
+{% block content %}
+    <h1>Селямалекум</h1>
+{% endblock %}
