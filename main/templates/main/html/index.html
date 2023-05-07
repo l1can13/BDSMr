@@ -2,14 +2,47 @@
 
 {% load compile_static %}
 
+{% block links %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+{% endblock %}
+
 {% block css %}
-    <link rel="stylesheet" href="{{ STATIC_URL}}{% compile "../static/styles/index.less" %}" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}{% compile "../static/styles/index.less" %}"/>
 {% endblock %}
 
 {% block title %}
-    Индекс страничка
+    Главная страница
 {% endblock %}
 
 {% block content %}
-    <h1>селямалекум</h1>
+    <header class="header">
+        <a class="logo" href="#">
+            <img src="static/source/logo.png" alt="Логотип">
+        </a>
+
+        <ul class="buttons-list">
+            <a href="#">
+                <li>О НАС</li>
+            </a>
+            <a href="#">
+                <li>УСЛУГИ</li>
+            </a>
+            <a href="#">
+                <li>КОМАНДА</li>
+            </a>
+            <a href="#">
+                <li>ПОРТФОЛИО</li>
+            </a>
+        </ul>
+    </header>
+
+    <main class="main">
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
 {% endblock %}
