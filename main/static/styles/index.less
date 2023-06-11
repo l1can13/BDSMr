@@ -7,7 +7,9 @@
 @masterDescription: #3A3A3A;
 
 // Fonts -------------------------------------------------------------------------------------------
-@mainFont: 'Ubuntu', sans-serif;
+@ubuntu: 'Ubuntu', sans-serif;
+@holtwood: 'Holtwood One SC', serif;
+@roboto: 'Roboto', sans-serif;
 
 // Displays ----------------------------------------------------------------------------------------
 @largeDesktops: ~"(min-width: 1200px)";
@@ -31,12 +33,14 @@
 @headerButtonsVerticalMargin: 45px;
 
 // Sizes -----------------------------------------------------------------------------------------
-@headerSize: 75px;
+@headerHeight: 75px;
 @logoLargeWidth: 210px;
 @logoSmallWidth: 150px;
 @headerButtonFontSize: 20px;
+@servicesTitleFontSize: 42px;
 
 // Styles ----------------------------------------------------------------------------------------
+/* Обнуление */
 * {
   box-sizing: border-box;
 }
@@ -46,12 +50,20 @@ a {
   color: inherit;
 }
 
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  content: '';
+}
+
 header {
   width: 100%;
   background: @black;
 
   @media @largeDesktops {
-    height: @headerSize;
+    height: @headerHeight;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +71,7 @@ header {
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    height: @headerSize;
+    height: @headerHeight;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,7 +153,7 @@ header {
 .buttons-list {
   list-style-type: none;
   color: @white;
-  font-family: @mainFont;
+  font-family: @ubuntu;
   font-size: @headerButtonFontSize;
 
   @media @largeDesktops {
@@ -200,4 +212,282 @@ header {
   @media @landscapePhonesSmaller {
     margin-top: @headerButtonsVerticalMargin;
   }
+}
+
+.info {
+  width: 100%;
+  background: url("../source/background_image.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media @largeDesktops {
+    height: 938px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    height: 938px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    height: 800px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    height: 650px;
+  }
+
+  @media @landscapePhonesSmaller {
+    height: 250px;
+  }
+}
+
+.studio_name, .bdsmr_hashtag {
+  color: @white;
+  font-family: @holtwood;
+  text-align: center;
+}
+
+.tattoo_studio, .address, .phone {
+  color: @white;
+  font-family: @ubuntu;
+  text-align: center;
+}
+
+.studio_name {
+  letter-spacing: 1.24px;
+
+  @media @largeDesktops {
+    font-size: 80px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 80px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 60px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 45px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 30px;
+  }
+}
+
+.bdsmr_hashtag {
+  letter-spacing: .84px;
+
+  @media @largeDesktops {
+    font-size: 48px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 48px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 28px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 23px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 23px;
+  }
+}
+
+.tattoo_studio {
+  @media @largeDesktops {
+    font-size: 40px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 40px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 20px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 17px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 17px;
+  }
+}
+
+.address {
+  @media @largeDesktops {
+    font-size: 32px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 32px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 23px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 15px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 15px;
+  }
+}
+
+.phone a {
+  @media @largeDesktops {
+    font-size: 24px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 24px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 13px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 13px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 13px;
+  }
+}
+
+.services {
+  width: 100%;
+  height: 856px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: @roboto;
+  background: @black;
+  padding: 0 150px;
+}
+
+.services_title {
+  color: @white;
+  font-size: @servicesTitleFontSize;
+  font-weight: bold;
+  letter-spacing: 0.84px;
+}
+
+/*#region Слайдер*/
+
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-list::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 75%)
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Конкретный слайдер */
+.slider {
+  padding: 0 50px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .slider {
+    padding: 0 20px;
+  }
+}
+
+.slider .slick-arrow {
+  width: 30px;
+  height: 70px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../source/arrow_l.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url('../source/arrow_r.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slick-next:before, .slick-prev:before {
+  content: '';
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: @black;
+  border: 2px solid @white;
+}
+
+.slider__item {
+  padding: 0 5px;
+}
+
+.slider__item img {
+  max-width: 100%;
+}
+
+.slider__item.slick-center {
+
+}
+
+/*#endregion RegionName*/
+
+.book_session_button {
+  margin-top: 52px;
+  height: 85px;
+  width: 560px;
+  background: @black;
+  color: @white;
+  font-family: @roboto;
+  font-size: 32px;
+  border: 5px solid @buttonOutline;
+  border-radius: 50px;
+  cursor: pointer;
 }
