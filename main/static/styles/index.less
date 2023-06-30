@@ -14,6 +14,8 @@
 // Displays ----------------------------------------------------------------------------------------
 @largeDesktops: ~"(min-width: 1200px)";
 
+@forGridDesktopMax: ~"(max-width: 1375px)";
+
 @mediumDesktopsMin: ~"(min-width: 980px)";
 @mediumDesktopsMax: ~"(max-width: 1199px)";
 
@@ -216,7 +218,7 @@ header {
 
 .info {
   width: 100%;
-  background: url("../source/background_image.png");
+  background: url("../source/common/background_image.png");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -398,14 +400,15 @@ header {
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
+  position: relative;
 }
+
 
 .slick-list::before {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 50px;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 75%)
 }
 
 /* Лента слайдов */
@@ -433,12 +436,12 @@ header {
 
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url('../source/arrow_l.svg') 0 0 / 100% no-repeat;
+  background: url('../source/slider/arrow_l.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url('../source/arrow_r.svg') 0 0 / 100% no-repeat;
+  background: url('../source/slider/arrow_r.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-arrow.slick-disabled {
@@ -471,13 +474,34 @@ header {
 
 .slider__item img {
   max-width: 100%;
+  position: relative;
+  z-index: -2;
 }
 
 .slider__item.slick-center {
 
 }
 
-/*#endregion RegionName*/
+.inside_box {
+  position: relative;
+  -webkit-transition: .3s ease;
+  cursor: pointer;
+}
+
+.inside_box h2 {
+  font-family: @ubuntu;
+  font-size: 20px;
+  color: @white;
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+}
+
+/*#endregion Слайдер*/
 
 .book_session_button {
   margin-top: 52px;
@@ -490,4 +514,92 @@ header {
   border: 5px solid @buttonOutline;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.masters_work {
+  background: @black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 300px 0 300px;
+}
+
+.masters_work h2 {
+  font-family: @roboto;
+  font-size: @servicesTitleFontSize;
+  color: @white;
+  margin: 102px 0 35px 0;
+}
+
+.creations {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  @media @largeDesktops {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  @media @landscapePhonesSmaller {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+.creations:before,
+.creations:after {
+  content: none;
+}
+
+.watch_more {
+  background: transparent;
+  color: @white;
+  font-family: @ubuntu;
+  font-size: 32px;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.team {
+  background: @black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 310px 0 310px;
+}
+
+.team h2 {
+  color: @white;
+  font-size: @servicesTitleFontSize;
+  font-family: @roboto;
+}
+
+.team span {
+  color: @white;
+}
+
+.team_signature {
+  font-family: @ubuntu;
+  font-size: 24px;
+  margin: 18px 0 65px 0;
+  text-align: center;
 }
