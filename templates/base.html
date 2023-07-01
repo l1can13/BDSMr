@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="{{ STATIC_URL}}{% compile "../static/styles/reset.less" %}" />
 
+    {% block links %} {% endblock %}
+
     {% block css %} {% endblock %}
 </head>
 <body>
