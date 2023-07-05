@@ -227,31 +227,12 @@ header {
 
 .info {
   width: 100%;
+  height: calc(100vh - @headerHeight);
   background: url("../source/common/background_image.png");
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  @media @largeDesktops {
-    height: 938px;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    height: 938px;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    height: 800px;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    height: 650px;
-  }
-
-  @media @landscapePhonesSmaller {
-    height: 250px;
-  }
 }
 
 /*#endregion Header*/
@@ -861,6 +842,7 @@ header {
   font-family: @ubuntu;
   opacity: 0;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .discounts_photos div:hover img {

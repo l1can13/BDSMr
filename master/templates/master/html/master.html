@@ -1,0 +1,51 @@
+{% extends 'main/html/base.html' %}
+
+{% load compile_static %}
+
+{% load static %}
+
+{% block links %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "styles/master.less"|compile %}"/>
+{% endblock %}
+
+{% block title %}
+    Мастер {{ master.name }}
+{% endblock %}
+
+{% block content %}
+    <header class="header">
+        <a class="logo" href="#">
+            <img src="../static/source/common/logo.png" alt="Логотип">
+        </a>
+
+        <ul class="buttons-list">
+            <a href="#">
+                <li>О НАС</li>
+            </a>
+            <a href="#">
+                <li>УСЛУГИ</li>
+            </a>
+            <a href="#">
+                <li>КОМАНДА</li>
+            </a>
+            <a href="#">
+                <li>ПОРТФОЛИО</li>
+            </a>
+        </ul>
+    </header>
+
+    <main class="main">
+        <div class="introduce" style="background: url(../static/source/introduce/{{ master.avatar }})">
+            <span class="name">Мастер {{ master.name }}</span>
+        </div>
+    </main>
+{% endblock %}

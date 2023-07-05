@@ -1,5 +1,6 @@
-{% extends 'base.html' %}
+{% extends 'main/html/base.html' %}
 
+{% load static %}
 {% load compile_static %}
 
 {% block links %}
@@ -11,14 +12,15 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link type="image/x-icon" href="static/source/common/logo.ico" rel="shortcut icon">
 {% endblock %}
 
 {% block css %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}{% compile "../static/styles/index.less" %}"/>
+    <link rel="stylesheet" href="{% static "styles/index.less"|compile %}"/>
 {% endblock %}
 
 {% block title %}
-    Главная страница
+    Black Door
 {% endblock %}
 
 {% block content %}
@@ -49,7 +51,7 @@
 
             <span class="bdsmr_hashtag">#BDSMr</span>
             <span class="tattoo_studio">Тату салон в Самаре</span>
-            <span class="address">5-я просека, 129, Самара</span>
+            <span class="address">5-я просека, 129</span>
             <span class="phone">
                 <a href="tel:+79270171661">+7 (927) 017-16-61</a>
             </span>
@@ -118,45 +120,57 @@
             <span class="team_signature">Интересуют работы конкретного мастера?<br> В личном портфолио мастеров собрано еще больше работ, переходи на страницу, чтобы посмотреть.</span>
 
             <div class="masters_first">
+
                 <div id="master1">
-                    <img src="static/source/masters/julia.png">
+                    <a href="/master/julia">
+                        <img src="static/source/masters/julia.png">
 
-                    <div class="caption">
-                        <span class="master_name">Юлия</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
+                        <div class="caption">
+                            <span class="master_name">Юлия</span>
+                            <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
+                        </div>
+                    </a>
                 </div>
-                <div id="master2">
-                    <img src="static/source/masters/nikolai.png">
 
-                    <div class="caption">
-                        <span class="master_name">Николай</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
+                <div id="master2">
+                    <a href="/master/julia">
+                        <img src="static/source/masters/nikolai.png">
+
+                        <div class="caption">
+                            <span class="master_name">Николай</span>
+                            <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
+                        </div>
+                    </a>
                 </div>
                 <div id="master3">
-                    <img src="static/source/masters/random1.png">
+                    <a href="/master/julia">
+                        <img src="static/source/masters/random1.png">
 
-                    <div class="caption">
-                        <span class="master_name">Азат</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
+                        <div class="caption">
+                            <span class="master_name">Азат</span>
+                            <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
+                        </div>
+                    </a>
                 </div>
                 <div id="master4">
-                    <img src="static/source/masters/random2.png">
+                    <a href="/master/julia">
+                        <img src="static/source/masters/random2.png">
 
-                    <div class="caption">
-                        <span class="master_name">Кто-то</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
+                        <div class="caption">
+                            <span class="master_name">Кто-то</span>
+                            <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
+                        </div>
+                    </a>
                 </div>
                 <div id="master5">
-                    <img src="static/source/masters/random3.png">
+                    <a href="/master/julia">
+                        <img src="static/source/masters/random3.png">
 
-                    <div class="caption">
-                        <span class="master_name">Еще кто-то</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
+                        <div class="caption">
+                            <span class="master_name">Еще кто-то</span>
+                            <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

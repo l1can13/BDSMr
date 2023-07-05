@@ -1,3 +1,4 @@
+{% load static %}
 {% load compile_static %}
 
 <!DOCTYPE html>
@@ -6,11 +7,13 @@
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %}</title>
 
-    <link rel="stylesheet" href="{{ STATIC_URL}}{% compile "../static/styles/reset.less" %}" />
-
     {% block links %} {% endblock %}
 
-    {% block css %} {% endblock %}
+    <link rel="stylesheet" href="{% static "styles/reset.less"|compile %}" />
+
+    {% block css %}
+
+    {% endblock %}
 </head>
 <body>
 
