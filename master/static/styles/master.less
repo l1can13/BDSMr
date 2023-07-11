@@ -1,0 +1,287 @@
+/*#region Переменные*/
+
+// Colors ------------------------------------------------------------------------------------------
+@black: #040404;
+@white: #FFFFFF;
+@buttonOutline: #565656;
+@aboutBackground: #1E1E1E;
+@globalBackground: #0F1010;
+@masterDescription: #3A3A3A;
+@viewPortfolio: #797979;
+
+// Fonts -------------------------------------------------------------------------------------------
+@ubuntu: 'Ubuntu', sans-serif;
+@holtwood: 'Holtwood One SC', serif;
+@roboto: 'Roboto', sans-serif;
+@inter: 'Inter', sans-serif;
+
+// Displays ----------------------------------------------------------------------------------------
+@largeDesktops: ~"(min-width: 1200px)";
+
+@forGridDesktopMax: ~"(max-width: 1375px)";
+
+@mediumDesktopsMin: ~"(min-width: 980px)";
+@mediumDesktopsMax: ~"(max-width: 1199px)";
+
+@smallDesktopsMin: ~"(min-width: 769px)";
+@smallDesktopsMax: ~"(max-width: 979px)";
+
+@landscapePhonesMin: ~"(min-width: 640px)";
+@landscapePhonesMax: ~"(max-width: 768px)";
+
+@landscapePhonesSmaller: ~"(max-width: 639px)";
+
+// Margins ---------------------------------------------------------------------------------------
+@logoLeftMargin: 42px;
+@logoTopMargin: 25px;
+@headerButtonsRightMargin: 78px;
+@headerButtonsHorizontalMargin: 45px;
+@headerButtonsVerticalMargin: 45px;
+
+// Sizes -----------------------------------------------------------------------------------------
+@headerHeight: 75px;
+@logoLargeWidth: 210px;
+@logoSmallWidth: 150px;
+@headerButtonFontSize: 20px;
+@servicesTitleFontSize: 42px;
+
+/*#endregion Переменные*/
+
+/*#region Introduce*/
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: -200px 0 150px 0 @black inset;
+
+  @media @largeDesktops {
+    height: calc(100vh - @headerHeight);
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    height: 500px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    height: 500px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    height: 300px;
+  }
+
+  @media @landscapePhonesSmaller {
+    height: 300px;
+  }
+}
+
+.name, .portfolio {
+  color: @white;
+  font-family: @ubuntu;
+  font-size: 40px;
+  align-self: flex-end;
+  margin-right: 200px;
+}
+
+.portfolio {
+  font-weight: 700;
+}
+
+/*#endregion Introduce*/
+
+/* region Блоки портфолио */
+
+.portfolio_blocks {
+  padding: 40px 0 100px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: @globalBackground;
+}
+
+.first_block {
+  display: grid;
+  gap: 40px;
+
+  @media @largeDesktops {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media @landscapePhonesSmaller {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.first_block img {
+  justify-self: center;
+}
+
+.second_block {
+  margin: 40px 0;
+
+  display: grid;
+  gap: 40px;
+
+  @media @largeDesktops {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: 1fr;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: 1fr;
+  }
+
+  @media @landscapePhonesSmaller {
+    grid-template-columns: 1fr;
+  }
+}
+
+.third_block {
+  display: grid;
+  gap: 20px;
+
+  @media @largeDesktops {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: 1fr;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: 1fr;
+  }
+
+  @media @landscapePhonesSmaller {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* region Первый блок */
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: @masterDescription;
+  font-family: @ubuntu;
+  color: @white;
+
+  @media @largeDesktops {
+    font-size: 32px;
+    justify-content: center;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    justify-content: space-around;
+    font-size: 24px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    justify-content: space-around;
+    font-size: 24px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    justify-content: space-around;
+    font-size: 16px;
+  }
+
+  @media @landscapePhonesSmaller {
+    justify-content: space-around;
+    font-size: 16px;
+  }
+}
+
+.spans {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    text-align: center;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    text-align: center;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    text-align: center;
+  }
+
+  @media @landscapePhonesSmaller {
+    text-align: center;
+  }
+}
+
+.description_header {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.book_session_button {
+  padding: 20px 60px;
+  background: @masterDescription;
+  color: @white;
+  font-family: @roboto;
+  border: 5px solid @buttonOutline;
+  border-radius: 50px;
+  cursor: pointer;
+
+  @media @largeDesktops {
+    margin-top: 40px;
+    font-size: 32px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 24px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 24px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 16px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 16px;
+  }
+}
+
+/* endregion Первый блок */
+
+/* endregion Блоки портфолио */

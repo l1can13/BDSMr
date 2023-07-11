@@ -35,7 +35,7 @@
 @logoLeftMargin: 42px;
 @logoTopMargin: 25px;
 @headerButtonsRightMargin: 78px;
-@headerButtonsHorizontalMargin: 85px;
+@headerButtonsHorizontalMargin: 45px;
 @headerButtonsVerticalMargin: 45px;
 
 // Sizes -----------------------------------------------------------------------------------------
@@ -47,216 +47,17 @@
 
 /*#endregion Переменные*/
 
-/*#region Обнуление*/
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-*, *:before, *:after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-  content: none;
-}
-
-/*#endregion Обнуление*/
-
-/*#region Header*/
-
-header {
-  width: 100%;
-  background: @black;
-
-  @media @largeDesktops {
-    height: @headerHeight;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    height: @headerHeight;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  @media @landscapePhonesSmaller {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-
-  @media @largeDesktops {
-    margin-left: @logoLeftMargin;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    margin-left: @logoLeftMargin;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    margin-top: @logoTopMargin;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    margin-top: @logoTopMargin;
-  }
-
-  @media @landscapePhonesSmaller {
-    margin-top: @logoTopMargin;
-  }
-}
-
-.logo img {
-  @media @largeDesktops {
-    width: @logoLargeWidth;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    width: @logoLargeWidth;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    width: @logoLargeWidth;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    width: @logoLargeWidth;
-  }
-
-  @media @landscapePhonesSmaller {
-    width: @logoSmallWidth;
-  }
-}
-
-.buttons-list {
-  list-style-type: none;
-  color: @white;
-  font-family: @ubuntu;
-  font-size: @headerButtonFontSize;
-
-  @media @largeDesktops {
-    display: flex;
-    flex-direction: row;
-    margin-right: @headerButtonsRightMargin;
-    align-items: center;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    display: flex;
-    flex-direction: row;
-    margin-right: @headerButtonsRightMargin;
-    align-items: center;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: @logoTopMargin 0;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: @logoTopMargin 0;
-  }
-
-  @media @landscapePhonesSmaller {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: @logoTopMargin 0;
-  }
-}
-
-.buttons-list a:not(:first-child) {
-  @media @largeDesktops {
-    margin-left: @headerButtonsHorizontalMargin;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    margin-left: @headerButtonsHorizontalMargin;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    margin-top: @headerButtonsVerticalMargin;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    margin-top: @headerButtonsVerticalMargin;
-  }
-
-  @media @landscapePhonesSmaller {
-    margin-top: @headerButtonsVerticalMargin;
-  }
-}
+/*#region Основная информация*/
 
 .info {
   width: 100%;
+  height: calc(100vh - @headerHeight);
   background: url("../source/common/background_image.png");
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  @media @largeDesktops {
-    height: 938px;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    height: 938px;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    height: 800px;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    height: 650px;
-  }
-
-  @media @landscapePhonesSmaller {
-    height: 250px;
-  }
 }
-
-/*#endregion Header*/
-
-/*#region Основная информация*/
 
 .studio_name, .bdsmr_hashtag {
   color: @white;
@@ -396,7 +197,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: @roboto;
-  background: @black;
+  background: @globalBackground;
 
   @media @largeDesktops {
     padding: 0 150px;
@@ -542,8 +343,7 @@ header {
 
 .book_session_button {
   margin-top: 52px;
-  height: 85px;
-  width: 560px;
+  padding: 20px 55px;
   background: @black;
   color: @white;
   font-family: @roboto;
@@ -558,7 +358,7 @@ header {
 /*#region Работы наших мастеров*/
 
 .masters_work {
-  background: @black;
+  background: @globalBackground;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -639,7 +439,7 @@ header {
 /*#region Наша команда*/
 
 .team {
-  background: @black;
+  background: @globalBackground;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -767,7 +567,7 @@ header {
 
   #master5 {
     grid-row-start: 3;
-    grid-column: 5 / span 5;
+    grid-column: 4 / span 6;
   }
 }
 
@@ -791,12 +591,12 @@ header {
 /*#region Скидки и акции*/
 
 .discounts {
-  background: @black;
+  background: @globalBackground;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 140px;
+  padding-top: 90px;
 }
 
 .discounts h2 {
@@ -861,6 +661,7 @@ header {
   font-family: @ubuntu;
   opacity: 0;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .discounts_photos div:hover img {
@@ -876,7 +677,7 @@ header {
 /*#region О нашем салоне*/
 
 .about {
-  background: @black;
+  background: @globalBackground;
   display: flex;
   flex-direction: column;
   justify-content: center;

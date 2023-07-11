@@ -1,0 +1,88 @@
+{% extends 'main/html/base.html' %}
+
+{% load compile_static %}
+
+{% load static %}
+
+{% block links %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "styles/portfolio.less"|compile %}"/>
+{% endblock %}
+
+{% block title %}
+    Портфолио
+{% endblock %}
+
+{% block content %}
+    <div class="parent_block">
+        <div class="first_block">
+            <div class="first_block__left">
+                <img src="../static/source/first/1.png">
+                <img src="../static/source/first/2.png">
+            </div>
+
+            <div class="first_block__right">
+                    <span>
+                        РАБОТЫ <br/>
+                        НАШИХ <br/>
+                        МАСТЕРОВ
+                    </span>
+
+                <img src="../static/source/first/3.png">
+            </div>
+        </div>
+
+        <div class="second_block">
+            <div><img src="../static/source/second/1.png"></div>
+        </div>
+
+        <div class="third_block">
+            <div><img src="../static/source/third/1.png"></div>
+            <div><img src="../static/source/third/2.png"></div>
+            <div><img src="../static/source/third/3.png"></div>
+        </div>
+
+        <div class="fourth_block">
+            <div><img src="../static/source/fourth/1.png"></div>
+            <div><img src="../static/source/fourth/2.png"></div>
+        </div>
+
+        <div class="fifth_block">
+            <div><img src="../static/source/fifth/1.png"></div>
+            <div><img src="../static/source/fifth/2.png"></div>
+            <div><img src="../static/source/fifth/3.png"></div>
+        </div>
+
+        <div class="sixth_block">
+            <div class="sixth_block__left">
+                <div><img src="../static/source/sixth/1.png"></div>
+                <div><img src="../static/source/sixth/2.png"></div>
+            </div>
+
+            <div class="sixth_block__right">
+                <div><img src="../static/source/sixth/3.png"></div>
+            </div>
+        </div>
+
+        <div class="seventh_block">
+            <div class="seventh_block__left">
+                <div><img src="../static/source/seventh/1.png"></div>
+            </div>
+
+            <div class="seventh_block__right">
+                <div><img src="../static/source/seventh/2.png"></div>
+                <div><img src="../static/source/seventh/3.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/base.js"></script>
+{% endblock %}

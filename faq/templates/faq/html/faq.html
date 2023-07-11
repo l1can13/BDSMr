@@ -1,0 +1,227 @@
+{% extends 'main/html/base.html' %}
+
+{% load compile_static %}
+
+{% load static %}
+
+{% block links %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "styles/faq.less"|compile %}"/>
+{% endblock %}
+
+{% block title %}
+    FAQ
+{% endblock %}
+
+{% block content %}
+    <div class="answers">
+            <span class="answers_title">
+                ОТВЕТЫ <br/>
+                НА ЧАСТО ЗАДАВАЕМЫЕ <br/>
+                ВОПРОСЫ О ТАТУИРОВКАХ
+            </span>
+    </div>
+
+    <div class="answers_menu">
+        <div class="answers_parent">
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Безопасны ли татуировки?</span>
+                    <span class="response_span">Ответ на безопасны ли татуировки</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Какие скидки действуют в салоне Black Door?</span>
+                    <span class="response_span">1. Скидка 20% на день рождения, скидка длится 5 дней, <br/>
+                        с момента даты рождения. Чтобы получить скидку <br/>
+                        необходимо предъявить паспорт. <br/>
+                        2. Скидка 15% за отзыв на следующий сеанс. <br/>
+                        3. Скидка 10% на следующей сеанс.
+                    </span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Есть ли противопоказания при которых нельзя делать татуировки?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Можно ли набить татуировку если мне меньше 18 лет?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Как подготовится к нанесению татуировки?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Где я могу найти эскиз для тату?</span>
+                    <span class="response_span">При поиске идей для татуировки можно воспользоваться <br/>
+                            интернет-сервисом Pinterest, просмотреть портфолио на <br/>
+                            нашем сайте или в социальных сетях.<br/>
+                            <br/>
+                            Если вы хотите уникальный эскиз татуировки вы можете <br/>
+                            обратиться к мастеру для разработки эскиза с учетом <br/>
+                            ваших пожеланий.
+                        </span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Какие места наиболее болезненны для нанесения тату?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Как ухаживать за татуировкой?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Как долго заживает татуировка?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Можно ли сделать временное тату?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">В каких случаях мастер может отказаться делать тату?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Как можно облегчить боль при нанесении татуировки?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <div class="answer_div" onclick="toggleResponse(this)">
+                <svg width="57" height="31" viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_up-[#337]" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.822279 1.03179C-0.274646 2.17287 -0.274646 4.02043 0.822279 5.1586L24.0799 29.2906C26.2765 31.5698 29.8401 31.5698 32.0368 29.2906L55.4659 4.98384C56.5516 3.85446 56.5657 2.02991 55.4941 0.885932C54.4 -0.284343 52.5971 -0.295532 51.4861 0.854282L30.0483 23.1011C28.9485 24.2421 27.1681 24.2421 26.0684 23.1011L4.79933 1.03179C3.70241 -0.109284 1.9192 -0.109284 0.822279 1.03179Z"
+                          fill="#797979"/>
+                </svg>
+
+                <div class="spans">
+                    <span class="answer_span">Что делать если татуировка перестала нравится?</span>
+                    <span class="response_span">Ответ</span>
+                </div>
+            </div>
+
+            <span class="consultation">
+                    Если вы недовольный своей татуировкой обратитесь к <br/>
+                    нашим мастерам за консультацией, чтобы обсудить <br/>
+                    возможные варианты исправления, перекрытия или <br/>
+                    удаления тату.
+            </span>
+        </div>
+    </div>
+
+    <script src="../static/js/faq.js"></script>
+    <script src="../static/js/base.js"></script>
+{% endblock %}
