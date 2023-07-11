@@ -9,15 +9,44 @@
 
     {% block links %} {% endblock %}
 
-    <link rel="stylesheet" href="{% static "styles/reset.less"|compile %}" />
+    <link rel="stylesheet" href="{% static "styles/reset.less"|compile %}"/>
+    <link rel="stylesheet" href="{% static "styles/base.less"|compile %}"/>
 
     {% block css %}
 
     {% endblock %}
 </head>
 <body>
+    <header class="header">
+        <a class="logo" href="/">
+            <img src="../static/source/common/logo.png" alt="Логотип">
+        </a>
 
-    {% block content %} {% endblock %}
+        <ul class="buttons-list">
+            <a href="" class="about_link">
+                <li>О НАС</li>
+            </a>
+            <a href="" class="services_link">
+                <li>УСЛУГИ</li>
+            </a>
+            <a href="" class="team_link">
+                <li>КОМАНДА</li>
+            </a>
+            <a href="/portfolio" class="portfolio_link">
+                <li>ПОРТФОЛИО</li>
+            </a>
+            <a href="/faq" class="faq_link">
+                <li>FAQs</li>
+            </a>
+        </ul>
+    </header>
 
+    <main class="main">
+        {% block content %} {% endblock %}
+    </main>
+
+    <footer class="footer">
+        {% block footer %} {% endblock %}
+    </footer>
 </body>
 </html>

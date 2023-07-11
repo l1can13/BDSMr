@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'static_precompiler',
     'main',
     'master',
+    'portfolio',
+    'faq',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

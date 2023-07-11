@@ -47,14 +47,17 @@
 
 /*#endregion Переменные*/
 
-/*#region Introduce*/
+/* region Шапка */
 
-.introduce {
+.answers {
+  background-size: cover;
+  /* Затемненный фон */
+  background: rgba(0, 0, 0, 0.9) url("../source/common/background_faq.png");
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  box-shadow: -200px 0 150px 0 @black inset;
 
   @media @largeDesktops {
     height: calc(100vh - @headerHeight);
@@ -77,211 +80,174 @@
   }
 }
 
-.name, .portfolio {
-  color: @white;
+.answers_title {
   font-family: @ubuntu;
-  font-size: 40px;
-  align-self: flex-end;
-  margin-right: 200px;
-}
-
-.portfolio {
   font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+
+  color: @white;
+
+  @media @largeDesktops {
+    font-size: 64px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 46px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 32px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 24px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 24px;
+  }
 }
 
-/*#endregion Introduce*/
+/* endregion Шапка */
 
-/* region Блоки портфолио */
+/* region Меню с вопросами */
 
-.portfolio_blocks {
-  padding: 40px 0 100px 0;
-
+.answers_menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: @globalBackground;
-}
-
-.first_block {
-  display: grid;
-  gap: 40px;
 
   @media @largeDesktops {
-    grid-template-columns: 2fr 1fr;
+    padding-top: 120px;
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    padding-top: 30px;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    padding-top: 30px;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    padding-top: 20px;
   }
 
   @media @landscapePhonesSmaller {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    padding-top: 10px;
   }
 }
 
-.first_block img {
-  justify-self: center;
-}
-
-.second_block {
-  margin: 40px 0;
-
-  display: grid;
-  gap: 40px;
-
-  @media @largeDesktops {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    grid-template-columns: 1fr;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    grid-template-columns: 1fr;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    grid-template-columns: 1fr;
-  }
-
-  @media @landscapePhonesSmaller {
-    grid-template-columns: 1fr;
-  }
-}
-
-.third_block {
-  display: grid;
-  gap: 20px;
-
-  @media @largeDesktops {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    grid-template-columns: 1fr;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    grid-template-columns: 1fr;
-  }
-
-  @media @landscapePhonesSmaller {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* region Первый блок */
-
-.description {
+.answers_parent {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: @masterDescription;
-  font-family: @ubuntu;
-  color: @white;
-
-  @media @largeDesktops {
-    font-size: 32px;
-    justify-content: center;
-  }
+  justify-content: center;
+  align-items: flex-start;
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    justify-content: space-around;
-    font-size: 24px;
+    padding: 120px;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    justify-content: space-around;
-    font-size: 24px;
+    padding: 120px;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    justify-content: space-around;
-    font-size: 16px;
+    padding: 120px;
   }
 
   @media @landscapePhonesSmaller {
-    justify-content: space-around;
-    font-size: 16px;
+    padding: 120px;
   }
+}
+
+.answer_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.answer_div svg {
+  margin: 15px 40px 0 0;
+  align-self: flex-start;
+  transition: transform 0.5s ease; /* Анимация переворота */
+}
+
+.answer_div svg path {
+  transition: fill 0.5s ease; /* Анимация изменения цвета заливки */
+}
+
+.answer_div.active svg path {
+  fill: @white; /* Изменение цвета заливки на белый */
+}
+
+.answer_div.active svg {
+  transform: rotate(180deg); /* Поворот на 180 градусов */
+  fill: @white; /* Изменение цвета на белый */
 }
 
 .spans {
+  color: @white;
+  font-family: @ubuntu;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    text-align: center;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    text-align: center;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    text-align: center;
-  }
-
-  @media @landscapePhonesSmaller {
-    text-align: center;
-  }
-}
-
-.description_header {
-  margin-bottom: 50px;
-  font-weight: 700;
-}
-
-.book_session_button {
-  padding: 20px 60px;
-  background: @masterDescription;
-  color: @white;
-  font-family: @roboto;
-  border: 5px solid @buttonOutline;
-  border-radius: 50px;
-  cursor: pointer;
 
   @media @largeDesktops {
-    margin-top: 40px;
-    font-size: 32px;
+    font-size: 40px;
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   @media @landscapePhonesSmaller {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
-/* endregion Первый блок */
+.answer_span {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
 
-/* endregion Блоки портфолио */
+.response_span {
+  max-height: 0; /* Изначально задаем высоту 0 */
+  overflow: hidden; /* Скрываем содержимое, выходящее за пределы высоты */
+  transition: max-height 0.5s ease; /* Анимация изменения высоты */
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.answer_div.active .response_span {
+  max-height: 500px; /* Автоматический расчет высоты содержимого */
+}
+
+/* endregion Меню с вопросами */
+
+/* region Консультация */
+
+.consultation {
+  color: @white;
+  font-family: @ubuntu;
+  font-size: 40px;
+  align-self: flex-start;
+
+  margin-bottom: 100px;
+}
+
+/* endregion Консультация */

@@ -47,241 +47,337 @@
 
 /*#endregion Переменные*/
 
-/*#region Introduce*/
+/* region Блок с фото */
 
-.introduce {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  box-shadow: -200px 0 150px 0 @black inset;
-
-  @media @largeDesktops {
-    height: calc(100vh - @headerHeight);
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    height: 500px;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    height: 500px;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    height: 300px;
-  }
-
-  @media @landscapePhonesSmaller {
-    height: 300px;
-  }
-}
-
-.name, .portfolio {
+.parent_block {
+  background: @globalBackground;
+  font-family: @roboto;
   color: @white;
-  font-family: @ubuntu;
-  font-size: 40px;
-  align-self: flex-end;
-  margin-right: 200px;
-}
-
-.portfolio {
-  font-weight: 700;
-}
-
-/*#endregion Introduce*/
-
-/* region Блоки портфолио */
-
-.portfolio_blocks {
-  padding: 40px 0 100px 0;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: @globalBackground;
+
+  padding: 100px 0 100px 0;
 }
+
+/* region Первый блок */
 
 .first_block {
-  display: grid;
-  gap: 40px;
+  display: flex;
+
+  margin-bottom: 40px;
 
   @media @largeDesktops {
-    grid-template-columns: 2fr 1fr;
+    flex-direction: row;
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
   }
 
   @media @landscapePhonesSmaller {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
   }
 }
 
-.first_block img {
-  justify-self: center;
+.first_block__left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+
+  margin-right: 40px;
 }
+
+.first_block__right {
+  display: grid;
+  gap: 40px;
+}
+
+.first_block__right span {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 110px;
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    margin-top: 40px;
+  }
+
+  @media @landscapePhonesSmaller {
+    margin-top: 40px;
+  }
+}
+
+/* endregion Первый блок */
+
+/* region Второй блок */
 
 .second_block {
-  margin: 40px 0;
-
-  display: grid;
-  gap: 40px;
+  margin-bottom: 40px;
 
   @media @largeDesktops {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    grid-template-columns: 1fr;
+    display: none;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    grid-template-columns: 1fr;
+    display: none;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    grid-template-columns: 1fr;
+    display: none;
   }
 
   @media @landscapePhonesSmaller {
-    grid-template-columns: 1fr;
+    display: none;
   }
 }
+
+/* endregion Второй блок */
+
+/* region Третий блок */
 
 .third_block {
   display: grid;
-  gap: 20px;
+  gap: 47px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin-bottom: 40px;
 
   @media @largeDesktops {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media @landscapePhonesSmaller {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+/* endregion Третий блок */
+
+/* region Четвертый блок */
+
+.fourth_block {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+
+  margin-bottom: 50px;
+
+  @media @largeDesktops {
     grid-template-columns: 1fr 1fr;
   }
 
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
   @media @smallDesktopsMin and @smallDesktopsMax {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   @media @landscapePhonesSmaller {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
-/* region Первый блок */
+/* endregion Четвертый блок */
 
-.description {
+/* region Пятый блок */
+
+.fifth_block {
+  display: grid;
+  gap: 47px;
+
+  margin-bottom: 40px;
+
+  @media @largeDesktops {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media @landscapePhonesSmaller {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+/* endregion Пятый блок */
+
+/* region Шестой блок */
+
+.sixth_block {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background: @masterDescription;
-  font-family: @ubuntu;
-  color: @white;
+
+  margin-bottom: 40px;
 
   @media @largeDesktops {
-    font-size: 32px;
-    justify-content: center;
+    flex-direction: row;
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    justify-content: space-around;
-    font-size: 24px;
+    flex-direction: column;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    justify-content: space-around;
-    font-size: 24px;
+    flex-direction: column;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    justify-content: space-around;
-    font-size: 16px;
+    flex-direction: column;
   }
 
   @media @landscapePhonesSmaller {
-    justify-content: space-around;
-    font-size: 16px;
+    flex-direction: column;
   }
 }
 
-.spans {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.sixth_block__left {
+  display: grid;
+  gap: 47px;
+  grid-template-rows: 1fr 1fr;
 
+  margin-right: 47px;
+}
+
+.sixth_block__right {
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    text-align: center;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    text-align: center;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    text-align: center;
-  }
-
-  @media @landscapePhonesSmaller {
-    text-align: center;
-  }
-}
-
-.description_header {
-  margin-bottom: 50px;
-  font-weight: 700;
-}
-
-.book_session_button {
-  padding: 20px 60px;
-  background: @masterDescription;
-  color: @white;
-  font-family: @roboto;
-  border: 5px solid @buttonOutline;
-  border-radius: 50px;
-  cursor: pointer;
-
-  @media @largeDesktops {
     margin-top: 40px;
-    font-size: 32px;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    font-size: 24px;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    font-size: 24px;
+    margin-top: 40px;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    font-size: 16px;
+    margin-top: 40px;
   }
 
   @media @landscapePhonesSmaller {
-    font-size: 16px;
+    margin-top: 40px;
   }
 }
 
-/* endregion Первый блок */
+/* endregion Шестой блок */
 
-/* endregion Блоки портфолио */
+/* region Седьмой блок */
+
+.seventh_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media @largeDesktops {
+    flex-direction: row;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    flex-direction: column;
+  }
+
+  @media @landscapePhonesSmaller {
+    flex-direction: column;
+  }
+}
+
+.seventh_block__left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seventh_block__right {
+  display: grid;
+  gap: 47px;
+  grid-template-rows: 1fr 1fr;
+
+  margin-left: 64px;
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    margin-top: 40px;
+  }
+
+  @media @landscapePhonesSmaller {
+    margin-top: 40px;
+  }
+}
+
+/* endregion Седьмой блок */
+
+/* endregion Блок с фото */
