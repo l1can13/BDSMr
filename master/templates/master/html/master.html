@@ -36,12 +36,34 @@
                         <span class="description_header">
                             {{ master.status|linebreaksbr }}
                         </span>
-                    <span class="description_body">
+                        <span class="description_body">
                             {{ master.portfolio|linebreaksbr }}
                         </span>
                 </div>
 
-                <button class="book_session_button">ЗАПИСАТЬСЯ НА СЕАНС</button>
+                <button class="book_session_button" id="bookSessionButton">ЗАПИСАТЬСЯ НА СЕАНС</button>
+
+                <div class="modal" id="myModal">
+                    <div class="modal-content">
+                        <span class="close" id="closeModal">&times;</span>
+                        <div class="modal-body">
+                            <h3>Мастер {{ master.name }}</h3>
+
+                            <span>
+                                Записаться на сеанс можно:
+                            </span>
+                            <span>
+                                Через группу в VK: <a href="https://vk.com/bdsmr"><u>https://vk.com/bdsmr</u></a>
+                            </span>
+                            <span>
+                                Написав мастеру лично: <a href="{{ master.vk }}"><u>{{ master.vk }}</u></a>
+                            </span>
+                            <span>
+                                Позвонив мастеру: <a href="tel:{{ master.phone_number }}"><u>{{ master.phone_number }}</u></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <img src="../static/source/photo_block/{{ portfolio_files.0.filename }}">
@@ -65,4 +87,5 @@
     </div>
 
     <script src="../static/js/base.js"></script>
+    <script src="../static/js/master.js"></script>
 {% endblock %}
