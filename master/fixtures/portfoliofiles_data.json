@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "master": 1,
-      "filename": "julia1"
+      "filename": "julia1.png"
     }
   },
   {
@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
       "master": 1,
-      "filename": "julia2"
+      "filename": "julia2.png"
     }
   },
   {
@@ -20,7 +20,7 @@
     "pk": 3,
     "fields": {
       "master": 1,
-      "filename": "julia3"
+      "filename": "julia3.png"
     }
   },
   {
@@ -28,7 +28,7 @@
     "pk": 4,
     "fields": {
       "master": 1,
-      "filename": "julia4"
+      "filename": "julia4.png"
     }
   },
   {
@@ -36,7 +36,7 @@
     "pk": 5,
     "fields": {
       "master": 1,
-      "filename": "julia5"
+      "filename": "julia5.png"
     }
   },
   {
@@ -44,7 +44,7 @@
     "pk": 6,
     "fields": {
       "master": 1,
-      "filename": "julia6"
+      "filename": "julia6.png"
     }
   },
   {
@@ -52,7 +52,7 @@
     "pk": 7,
     "fields": {
       "master": 1,
-      "filename": "julia7"
+      "filename": "julia7.png"
     }
   },
   {
@@ -60,7 +60,7 @@
     "pk": 8,
     "fields": {
       "master": 1,
-      "filename": "julia8"
+      "filename": "julia8.png"
     }
   },
   {
@@ -68,7 +68,7 @@
     "pk": 9,
     "fields": {
       "master": 1,
-      "filename": "julia9"
+      "filename": "julia9.png"
     }
   }
 ]
