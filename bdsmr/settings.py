@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#e&vm-r_%k^#yat=)1+6&pu4@*-(p3&y!wmyy%u(11u&+!v)#u
 DEBUG = True  # dev
 # DEBUG = False  # prod
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'bdsmr.ru', 'www.bdsmr.ru']
 
 # Application definition
 
