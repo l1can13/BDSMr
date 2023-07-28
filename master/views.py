@@ -17,4 +17,6 @@ class MasterDetailView(DetailView):
 
         context['portfolio_files'] = portfolio_files
 
+        context['logo_image'] = 'source/common/logo.png'
+
         return dict(context)
