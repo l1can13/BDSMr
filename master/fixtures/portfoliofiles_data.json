@@ -1,0 +1,74 @@
+[
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 1,
+    "fields": {
+      "master": 1,
+      "filename": "julia1"
+    }
+  },
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 2,
+    "fields": {
+      "master": 1,
+      "filename": "julia2"
+    }
+  },
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 3,
+    "fields": {
+      "master": 1,
+      "filename": "julia3"
+    }
+  },
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 4,
+    "fields": {
+      "master": 1,
+      "filename": "julia4"
+    }
+  },
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 5,
+    "fields": {
+      "master": 1,
+      "filename": "julia5"
+    }
+  },
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 6,
+    "fields": {
+      "master": 1,
+      "filename": "julia6"
+    }
+  },
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 7,
+    "fields": {
+      "master": 1,
+      "filename": "julia7"
+    }
+  },
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 8,
+    "fields": {
+      "master": 1,
+      "filename": "julia8"
+    }
+  },
+  {
+    "model": "master.PortfolioFiles",
+    "pk": 9,
+    "fields": {
+      "master": 1,
+      "filename": "julia9"
+    }
+  }
+]
