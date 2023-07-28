@@ -1,0 +1,746 @@
+/*#region Переменные*/
+/*#endregion Переменные*/
+/*#region Основная информация*/
+.info {
+  width: 100%;
+  height: calc(100vh - 75px);
+  background: url("../source/common/background_image.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.studio_name,
+.bdsmr_hashtag {
+  color: #FFFFFF;
+  font-family: 'Holtwood One SC', serif;
+  text-align: center;
+}
+.tattoo_studio,
+.address,
+.phone {
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+.studio_name {
+  letter-spacing: 1.24px;
+}
+@media (min-width: 1200px) {
+  .studio_name {
+    font-size: 80px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .studio_name {
+    font-size: 80px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .studio_name {
+    font-size: 60px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .studio_name {
+    font-size: 45px;
+  }
+}
+@media (max-width: 639px) {
+  .studio_name {
+    font-size: 30px;
+  }
+}
+.bdsmr_hashtag {
+  letter-spacing: 0.84px;
+}
+@media (min-width: 1200px) {
+  .bdsmr_hashtag {
+    font-size: 48px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .bdsmr_hashtag {
+    font-size: 48px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .bdsmr_hashtag {
+    font-size: 28px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .bdsmr_hashtag {
+    font-size: 23px;
+  }
+}
+@media (max-width: 639px) {
+  .bdsmr_hashtag {
+    font-size: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  .tattoo_studio {
+    font-size: 40px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .tattoo_studio {
+    font-size: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .tattoo_studio {
+    font-size: 20px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .tattoo_studio {
+    font-size: 17px;
+  }
+}
+@media (max-width: 639px) {
+  .tattoo_studio {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1200px) {
+  .address {
+    font-size: 32px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .address {
+    font-size: 32px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .address {
+    font-size: 23px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .address {
+    font-size: 15px;
+  }
+}
+@media (max-width: 639px) {
+  .address {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .phone a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .phone a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .phone a {
+    font-size: 13px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .phone a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 639px) {
+  .phone a {
+    font-size: 13px;
+  }
+}
+/*#endregion Основная информация*/
+/*#region Услуги*/
+.services {
+  width: 100%;
+  height: 856px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background: #0F1010;
+}
+@media (min-width: 1200px) {
+  .services {
+    padding: 0 150px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .services {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .services {
+    font-size: 60px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .services {
+    font-size: 45px;
+  }
+}
+@media (max-width: 639px) {
+  .services {
+    font-size: 30px;
+  }
+}
+.services_title {
+  color: #FFFFFF;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 0.84px;
+  margin-top: 105px;
+}
+/*#region Слайдер*/
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+  position: relative;
+}
+.slick-list::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+/* Конкретный слайдер */
+.slider {
+  padding: 0 50px;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .slider {
+    padding: 0 20px;
+  }
+}
+.slider .slick-arrow {
+  width: 30px;
+  height: 70px;
+}
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../source/slider/arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url('../source/slider/arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+.slick-next:before,
+.slick-prev:before {
+  content: '';
+}
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+.slider .slick-dots li.slick-active button {
+  background-color: #040404;
+  border: 2px solid #FFFFFF;
+}
+.slider__item {
+  padding: 0 5px;
+}
+.slider__item img {
+  max-width: 100%;
+  position: relative;
+  z-index: -2;
+}
+.inside_box {
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  cursor: pointer;
+}
+.inside_box h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+}
+/*#endregion Слайдер*/
+.book_session_button {
+  margin-top: 52px;
+  padding: 20px 55px;
+  background: #040404;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  border: 5px solid #565656;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/*#endregion Услуги*/
+/*#region Работы наших мастеров*/
+.masters_work {
+  background: #0F1010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.masters_work h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 42px;
+  color: #FFFFFF;
+  margin: 102px 0 35px 0;
+  text-align: center;
+}
+.creations {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+@media (min-width: 1200px) {
+  .creations {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .creations {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .creations {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .creations {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+@media (max-width: 639px) {
+  .creations {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+.watch_more {
+  background: transparent;
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 32px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+@media (min-width: 1200px) {
+  .watch_more {
+    grid-column: 3;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .watch_more {
+    grid-column: 2;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .watch_more {
+    grid-column: 1;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .watch_more {
+    grid-column: 1;
+  }
+}
+@media (max-width: 639px) {
+  .watch_more {
+    grid-column: 1;
+  }
+}
+/*#endregion Работы наших мастеров*/
+/*#region Наша команда*/
+.team {
+  background: #0F1010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.team h2 {
+  color: #FFFFFF;
+  font-size: 42px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.team_signature {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  margin: 18px 0 65px 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.masters_first {
+  display: grid;
+  gap: 25px;
+  justify-content: center;
+  align-content: center;
+}
+.masters_first > div {
+  position: relative;
+}
+.masters_first img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+.masters_first div:hover img {
+  filter: brightness(0.4);
+}
+.masters_first > div:hover div {
+  opacity: 1;
+}
+.masters_first > div div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.master_name {
+  color: #FFFFFF;
+  font-size: 40px;
+  cursor: pointer;
+}
+.portfolio {
+  font-size: 14px;
+  color: #797979;
+  cursor: pointer;
+}
+/* Large Desktops */
+@media (min-width: 1200px) {
+  .masters_first {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #master1,
+  #master2,
+  #master3 {
+    grid-row-start: 1;
+    grid-column: span 4;
+  }
+  #master4 {
+    grid-row-start: 2;
+    grid-column: 3 / span 4;
+  }
+  #master5 {
+    grid-row-start: 2;
+    grid-column: 7 / span 4;
+  }
+}
+/* Medium Desktops */
+@media (min-width: 980px) and (max-width: 1199px) {
+  .masters_first {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #master1 {
+    grid-row-start: 1;
+    grid-column: 2 / span 5;
+  }
+  #master2 {
+    grid-row-start: 1;
+    grid-column: 7 / span 5;
+  }
+  #master3 {
+    grid-row-start: 2;
+    grid-column: 2 / span 5;
+  }
+  #master4 {
+    grid-row-start: 2;
+    grid-column: 7 / span 5;
+  }
+  #master5 {
+    grid-row-start: 3;
+    grid-column: 4 / span 6;
+  }
+}
+/* Small Desktops */
+@media (min-width: 769px) and (max-width: 979px) {
+  .masters_first div {
+    grid-column: span 12;
+  }
+}
+/* Landscape Phones */
+@media (min-width: 640px) and (max-width: 768px), (max-width: 639px) {
+  .masters_first div {
+    grid-column: span 12;
+  }
+}
+/*#endregion Наша команда*/
+/*#region Скидки и акции*/
+.discounts {
+  background: #0F1010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+.discounts h2 {
+  color: #FFFFFF;
+  font-size: 42px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.discounts_photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+@media (min-width: 1200px) {
+  .discounts_photos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .discounts_photos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .discounts_photos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .discounts_photos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media (max-width: 639px) {
+  .discounts_photos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+.discounts_photos div {
+  position: relative;
+}
+.discounts_photos img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+.discounts_photos span {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.discounts_photos div:hover img {
+  filter: brightness(0.4);
+}
+.discounts_photos div:hover span {
+  opacity: 1;
+}
+/*#endregion Наша команда*/
+/*#region О нашем салоне*/
+.about {
+  background: #0F1010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 140px;
+  height: 100%;
+}
+.about h2 {
+  color: #FFFFFF;
+  font-size: 42px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 160px;
+}
+@media (min-width: 1200px) {
+  .card {
+    flex-direction: row;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .card {
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .card {
+    flex-direction: column;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+}
+@media (max-width: 639px) {
+  .card {
+    flex-direction: column;
+  }
+}
+.left {
+  width: 570px;
+  background: #1E1E1E;
+}
+.inner_left {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 32px;
+  letter-spacing: 1.25px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.about_text {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.vk {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px;
+}
+.work_time {
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+.card_address {
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.leave_feedback {
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.maps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.two_gis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yandex svg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.yandex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  width: 700px;
+  height: 617px;
+}
+.right iframe {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%) invert(100%) contrast(67%);
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .right iframe {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .right iframe {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .right iframe {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 639px) {
+  .right iframe {
+    margin-top: 30px;
+  }
+}
+/*#endregion О нашем салоне*/
+/*# sourceMappingURL=index.css.map */
