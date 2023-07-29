@@ -109,22 +109,22 @@ header {
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   .logo {
-    margin-top: 25px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 769px) and (max-width: 979px) {
   .logo {
-    margin-top: 25px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
   .logo {
-    margin-top: 25px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 639px) {
   .logo {
-    margin-top: 25px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -134,22 +134,22 @@ header {
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   .logo img {
-    width: 150px;
+    width: 310px;
   }
 }
 @media (min-width: 769px) and (max-width: 979px) {
   .logo img {
-    width: 150px;
+    width: 310px;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
   .logo img {
-    width: 150px;
+    width: 310px;
   }
 }
 @media (max-width: 639px) {
   .logo img {
-    width: 150px;
+    width: 310px;
   }
 }
 .menu-toggle {
@@ -157,13 +157,13 @@ header {
   background: transparent;
   font-family: 'Ubuntu', sans-serif;
   font-size: 24px;
-  padding: 25px;
+  padding: 40px;
 }
 .buttons-list {
   list-style-type: none;
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 1px;
 }
 @media (min-width: 1200px) {
@@ -231,7 +231,7 @@ header {
   min-height: 100%;
   max-height: 1000px;
   opacity: 1;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 @media (min-width: 1200px) {
   .menu-toggle {
