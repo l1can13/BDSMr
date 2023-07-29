@@ -9,3 +9,22 @@ bookSessionButton.addEventListener('click', (event) => {
         scrollToElement(aboutContainer);
     }
 });
+
+// Получаем ссылку на кнопку и список
+const menuToggle = document.querySelector('.menu-toggle');
+const buttonsList = document.querySelector('.buttons-list');
+
+// Обработчик события клика на кнопку
+let clicked = false;
+menuToggle.addEventListener('click', () => {
+  // При клике добавляем или удаляем класс "show" у списка
+  buttonsList.classList.toggle('show');
+
+  clicked = !clicked;
+  if (clicked) {
+      menuToggle.style.transform = 'rotate(180deg)';
+  }
+  else {
+      menuToggle.style.transform = 'rotate(0deg)';
+  }
+});
