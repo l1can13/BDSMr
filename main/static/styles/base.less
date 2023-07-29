@@ -33,7 +33,7 @@
 
 // Margins ---------------------------------------------------------------------------------------
 @logoLeftMargin: 42px;
-@logoTopMargin: 25px;
+@logoTopMargin: 40px;
 @headerButtonsRightMargin: 78px;
 @headerButtonsHorizontalMargin: 45px;
 @headerButtonsVerticalMargin: 45px;
@@ -41,6 +41,7 @@
 // Sizes -----------------------------------------------------------------------------------------
 @headerHeight: 75px;
 @logoLargeWidth: 210px;
+@logoVeryLargeWidth: 310px;
 @logoSmallWidth: 150px;
 @headerButtonFontSize: 20px;
 @servicesTitleFontSize: 42px;
@@ -177,19 +178,19 @@ header {
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    width: @logoSmallWidth;
+    width: @logoVeryLargeWidth;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    width: @logoSmallWidth;
+    width: @logoVeryLargeWidth;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    width: @logoSmallWidth;
+    width: @logoVeryLargeWidth;
   }
 
   @media @landscapePhonesSmaller {
-    width: @logoSmallWidth;
+    width: @logoVeryLargeWidth;
   }
 }
 
@@ -205,7 +206,7 @@ header {
   list-style-type: none;
   color: @white;
   font-family: @ubuntu;
-  font-size: @headerButtonFontSize;
+  font-size: 30px;
   letter-spacing: 1px;
 
   @media @largeDesktops {
