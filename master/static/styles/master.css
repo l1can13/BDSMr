@@ -8,27 +8,27 @@
   align-items: center;
   box-shadow: -200px 0 150px 0 #040404 inset;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .introduce {
     height: calc(100vh - 75px);
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .introduce {
     height: 500px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .introduce {
     height: 500px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .introduce {
     height: 300px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .introduce {
     height: 300px;
   }
@@ -58,30 +58,30 @@
   display: grid;
   gap: 40px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .first_block {
     grid-template-columns: 2fr 1fr;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .first_block {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .first_block {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .first_block {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .first_block {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -95,27 +95,27 @@
   display: grid;
   gap: 40px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .second_block {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .second_block {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .second_block {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .second_block {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .second_block {
     grid-template-columns: 1fr;
   }
@@ -124,27 +124,27 @@
   display: grid;
   gap: 20px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .third_block {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .third_block {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .third_block {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .third_block {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .third_block {
     grid-template-columns: 1fr;
   }
@@ -159,31 +159,31 @@
   color: #FFFFFF;
   padding: 10px 90px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .description {
     font-size: 32px;
     justify-content: center;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .description {
     justify-content: space-around;
     font-size: 24px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .description {
     justify-content: space-around;
     font-size: 24px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .description {
     justify-content: space-around;
     font-size: 24px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .description {
     justify-content: space-around;
     font-size: 24px;
@@ -195,22 +195,22 @@
   justify-content: flex-start;
   align-self: flex-start;
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .spans {
     text-align: center;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .spans {
     text-align: center;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .spans {
     text-align: center;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .spans {
     text-align: center;
   }
@@ -233,28 +233,28 @@
   border-radius: 50px;
   cursor: pointer;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .book_session_button {
     margin-top: 40px;
     font-size: 32px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .book_session_button {
     font-size: 24px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .book_session_button {
     font-size: 24px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .book_session_button {
     font-size: 16px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .book_session_button {
     font-size: 16px;
   }
@@ -292,12 +292,12 @@
   white-space: nowrap;
   /* Запрет переноса строк внутри контейнера */
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .modal-content {
     white-space: normal;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .modal-content {
     white-space: normal;
   }

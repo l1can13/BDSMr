@@ -33,27 +33,27 @@
 .studio_name {
   letter-spacing: 1.24px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .studio_name {
     font-size: 80px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .studio_name {
     font-size: 80px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .studio_name {
     font-size: 60px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .studio_name {
     font-size: 45px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .studio_name {
     font-size: 30px;
   }
@@ -61,27 +61,27 @@
 .bdsmr_hashtag {
   letter-spacing: 0.84px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .bdsmr_hashtag {
     font-size: 48px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .bdsmr_hashtag {
     font-size: 48px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .bdsmr_hashtag {
     font-size: 28px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .bdsmr_hashtag {
     font-size: 23px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .bdsmr_hashtag {
     font-size: 23px;
   }
@@ -89,27 +89,27 @@
 .tattoo_studio {
   margin-bottom: 20px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .tattoo_studio {
     font-size: 40px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .tattoo_studio {
     font-size: 40px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .tattoo_studio {
     font-size: 20px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .tattoo_studio {
     font-size: 17px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .tattoo_studio {
     font-size: 17px;
   }
@@ -118,27 +118,27 @@
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .info a {
     font-size: 32px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .info a {
     font-size: 32px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .info a {
     font-size: 13px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .info a {
     font-size: 13px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .info a {
     font-size: 13px;
   }
@@ -158,27 +158,27 @@
   font-family: 'Roboto', sans-serif;
   background: #0F1010;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .services {
     padding: 0 150px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .services {
     padding: 0 30px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .services {
     font-size: 60px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .services {
     font-size: 45px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .services {
     font-size: 30px;
   }
@@ -217,7 +217,7 @@
   width: 100%;
   position: relative;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .slider {
     padding: 0 20px;
   }
@@ -314,31 +314,31 @@
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .creations {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .creations {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .creations {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .creations {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .creations {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -352,27 +352,27 @@
   cursor: pointer;
   margin-top: 10px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .watch_more {
     grid-column: 3;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .watch_more {
     grid-column: 2;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .watch_more {
     grid-column: 1;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .watch_more {
     grid-column: 1;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .watch_more {
     grid-column: 1;
   }
@@ -450,7 +450,7 @@
   cursor: pointer;
 }
 /* Large Desktops */
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .masters_first {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
@@ -471,7 +471,7 @@
   }
 }
 /* Medium Desktops */
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .masters_first {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
@@ -498,13 +498,13 @@
   }
 }
 /* Small Desktops */
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .masters_first div {
     grid-column: span 12;
   }
 }
 /* Landscape Phones */
-@media (min-width: 640px) and (max-width: 768px), (max-width: 639px) {
+@media only screen and (min-width: 640px) and (max-width: 768px), (max-width: 639px) {
   .masters_first div {
     grid-column: span 12;
   }
@@ -533,31 +533,31 @@
   grid-template-rows: 1fr;
   gap: 25px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .discounts_photos {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .discounts_photos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .discounts_photos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .discounts_photos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .discounts_photos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
@@ -617,27 +617,27 @@
   align-items: center;
   padding-bottom: 160px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .card {
     flex-direction: row;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .card {
     flex-direction: column;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .card {
     flex-direction: column;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .card {
     flex-direction: column;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .card {
     flex-direction: column;
   }
@@ -647,29 +647,29 @@
   background: #1E1E1E;
   letter-spacing: 1px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .left {
     font-size: 16px;
     line-height: 20px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .left {
     font-size: 28px;
     line-height: 40px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .left {
     font-size: 28px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .left {
     font-size: 28px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .left {
     font-size: 28px;
   }
@@ -696,22 +696,22 @@
   justify-content: flex-start;
   align-items: center;
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .vk {
     margin: 25px 0;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .vk {
     margin: 25px 0;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .vk {
     margin: 25px 0;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .vk {
     margin: 25px 0;
   }
@@ -759,28 +759,28 @@
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .right {
     width: 700px;
     height: 553px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .right {
     display: none;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .right {
     display: none;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .right {
     display: none;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .right {
     display: none;
   }
@@ -790,22 +790,22 @@
   height: 100%;
   filter: grayscale(100%) invert(100%) contrast(67%);
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .right iframe {
     display: none;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .right iframe {
     display: none;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .right iframe {
     display: none;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .right iframe {
     display: none;
   }

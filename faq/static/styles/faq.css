@@ -10,27 +10,27 @@
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .answers {
     height: calc(100vh - 75px);
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .answers {
     height: 500px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .answers {
     height: 500px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .answers {
     height: 300px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .answers {
     height: 300px;
   }
@@ -42,27 +42,27 @@
   text-align: center;
   color: #FFFFFF;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .answers_title {
     font-size: 64px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .answers_title {
     font-size: 46px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .answers_title {
     font-size: 32px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .answers_title {
     font-size: 24px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .answers_title {
     font-size: 24px;
   }
@@ -84,27 +84,27 @@
   line-height: 30px;
   letter-spacing: 1px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .answers_parent {
     padding: 120px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .answers_parent {
     padding: 120px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .answers_parent {
     padding: 120px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .answers_parent {
     padding: 120px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .answers_parent {
     padding: 120px;
   }
@@ -144,27 +144,27 @@
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .spans {
     font-size: 30px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .spans {
     font-size: 25px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .spans {
     font-size: 25px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .spans {
     font-size: 25px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .spans {
     font-size: 25px;
   }
@@ -183,27 +183,27 @@
   margin-top: 20px;
   margin-bottom: 25px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .response_span {
     font-size: 20px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .response_span {
     font-size: 20px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .response_span {
     font-size: 20px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .response_span {
     font-size: 20px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .response_span {
     font-size: 20px;
   }
@@ -223,27 +223,27 @@
   letter-spacing: 0.838px;
   margin-top: 30px;
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .consultation {
     font-size: 30px;
   }
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
   .consultation {
     font-size: 25px;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 979px) {
   .consultation {
     font-size: 25px;
   }
 }
-@media (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .consultation {
     font-size: 25px;
   }
 }
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .consultation {
     font-size: 25px;
   }

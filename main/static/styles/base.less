@@ -106,7 +106,7 @@ header {
   width: 100%;
   background: @black;
 
-  @media @largeDesktops {
+  @media only screen and @largeDesktops {
     height: @headerHeight;
     display: flex;
     justify-content: space-between;
@@ -114,7 +114,7 @@ header {
     flex-direction: row;
   }
 
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -122,7 +122,7 @@ header {
     flex-direction: column;
   }
 
-  @media @smallDesktopsMin and @smallDesktopsMax {
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -130,7 +130,7 @@ header {
     flex-direction: column;
   }
 
-  @media @landscapePhonesMin and @landscapePhonesMax {
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -138,7 +138,7 @@ header {
     flex-direction: column;
   }
 
-  @media @landscapePhonesSmaller {
+  @media only screen and @landscapePhonesSmaller {
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -151,45 +151,45 @@ header {
   display: flex;
   align-items: center;
 
-  @media @largeDesktops {
+  @media only screen and @largeDesktops {
     margin-left: @logoLeftMargin;
   }
 
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
     margin-top: @logoTopMargin;
   }
 
-  @media @smallDesktopsMin and @smallDesktopsMax {
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
     margin-top: @logoTopMargin;
   }
 
-  @media @landscapePhonesMin and @landscapePhonesMax {
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
     margin-top: @logoTopMargin;
   }
 
-  @media @landscapePhonesSmaller {
+  @media only screen and @landscapePhonesSmaller {
     margin-top: @logoTopMargin;
   }
 }
 
 .logo img {
-  @media @largeDesktops {
+  @media only screen and @largeDesktops {
     width: @logoLargeWidth;
   }
 
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
     width: @logoVeryLargeWidth;
   }
 
-  @media @smallDesktopsMin and @smallDesktopsMax {
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
     width: @logoVeryLargeWidth;
   }
 
-  @media @landscapePhonesMin and @landscapePhonesMax {
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
     width: @logoVeryLargeWidth;
   }
 
-  @media @landscapePhonesSmaller {
+  @media only screen and @landscapePhonesSmaller {
     width: @logoVeryLargeWidth;
   }
 }
@@ -209,14 +209,14 @@ header {
   font-size: 18px;
   letter-spacing: 1px;
 
-  @media @largeDesktops {
+  @media only screen and @largeDesktops {
     display: flex;
     flex-direction: row;
     margin-right: @headerButtonsRightMargin;
     align-items: center;
   }
 
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +232,7 @@ header {
     transition: max-height .7s ease, visibility .3s ease, opacity .7s ease, margin-bottom .5s ease;
   }
 
-  @media @smallDesktopsMin and @smallDesktopsMax {
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,7 +248,7 @@ header {
     transition: max-height .7s ease, visibility .3s ease, opacity .7s ease, margin-bottom .5s ease;
   }
 
-  @media @landscapePhonesMin and @landscapePhonesMax {
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,7 +264,7 @@ header {
     transition: max-height .7s ease, visibility .3s ease, opacity .7s ease, margin-bottom .5s ease;
   }
 
-  @media @landscapePhonesSmaller {
+  @media only screen and @landscapePhonesSmaller {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,49 +290,49 @@ header {
 }
 
 .menu-toggle {
-  @media @largeDesktops {
+  @media only screen and @largeDesktops {
     display: none;
   }
 
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
     display: block;
     transition: transform .5s ease;
   }
 
-  @media @smallDesktopsMin and @smallDesktopsMax {
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
     display: block;
     transition: transform .5s ease;
   }
 
-  @media @landscapePhonesMin and @landscapePhonesMax {
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
     display: block;
     transition: transform .5s ease;
   }
 
-  @media @landscapePhonesSmaller {
+  @media only screen and @landscapePhonesSmaller {
     display: block;
     transition: transform .5s ease;
   }
 }
 
 .buttons-list a:not(:first-child) {
-  @media @largeDesktops {
+  @media only screen and @largeDesktops {
     margin-left: @headerButtonsHorizontalMargin;
   }
 
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
     margin-top: @headerButtonsVerticalMargin;
   }
 
-  @media @smallDesktopsMin and @smallDesktopsMax {
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
     margin-top: @headerButtonsVerticalMargin;
   }
 
-  @media @landscapePhonesMin and @landscapePhonesMax {
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
     margin-top: @headerButtonsVerticalMargin;
   }
 
-  @media @landscapePhonesSmaller {
+  @media only screen and @landscapePhonesSmaller {
     margin-top: @headerButtonsVerticalMargin;
   }
 }
