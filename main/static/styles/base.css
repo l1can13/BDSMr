@@ -108,7 +108,7 @@ header {
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   .logo {
-    margin-left: 42px;
+    margin-top: 25px;
   }
 }
 @media (min-width: 769px) and (max-width: 979px) {
@@ -133,12 +133,12 @@ header {
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   .logo img {
-    width: 210px;
+    width: 150px;
   }
 }
 @media (min-width: 769px) and (max-width: 979px) {
   .logo img {
-    width: 210px;
+    width: 150px;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
