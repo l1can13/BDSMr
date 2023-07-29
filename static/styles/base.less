@@ -154,19 +154,19 @@ header {
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    margin: @logoTopMargin 0;
+    margin-top: @logoTopMargin;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    margin: @logoTopMargin 0;
+    margin-top: @logoTopMargin;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    margin: @logoTopMargin 0;
+    margin-top: @logoTopMargin;
   }
 
   @media @landscapePhonesSmaller {
-    margin: @logoTopMargin 0;
+    margin-top: @logoTopMargin;
   }
 }
 
@@ -192,12 +192,19 @@ header {
   }
 }
 
+.menu-toggle {
+  color: @white;
+  background: transparent;
+  font-family: @ubuntu;
+  font-size: 24px;
+  padding: @logoTopMargin;
+}
+
 .buttons-list {
   list-style-type: none;
   color: @white;
   font-family: @ubuntu;
   font-size: @headerButtonFontSize;
-  display: flex;
 
   @media @largeDesktops {
     display: flex;
@@ -207,48 +214,94 @@ header {
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    min-height: 0;
-    max-height: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
     visibility: hidden;
-    transition: max-height 0.5s ease, visibility 0.5s ease;
+    min-height: 0;
+    max-height: 0;
+    opacity: 0;
+
+    transition: max-height .7s ease, visibility .3s ease, opacity .7s ease, margin-bottom .5s ease;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    min-height: 0;
-    max-height: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
     visibility: hidden;
-    transition: max-height 0.5s ease, visibility 0.5s ease;
+    min-height: 0;
+    max-height: 0;
+    opacity: 0;
+
+    transition: max-height .7s ease, visibility .3s ease, opacity .7s ease, margin-bottom .5s ease;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    min-height: 0;
-    max-height: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
     visibility: hidden;
-    transition: max-height 0.5s ease, visibility 0.5s ease;
+    min-height: 0;
+    max-height: 0;
+    opacity: 0;
+
+    transition: max-height .7s ease, visibility .3s ease, opacity .7s ease, margin-bottom .5s ease;
   }
 
   @media @landscapePhonesSmaller {
-    min-height: 0;
-    max-height: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
     visibility: hidden;
-    transition: max-height 0.5s ease, visibility 0.5s ease;
+    min-height: 0;
+    max-height: 0;
+    opacity: 0;
+
+    transition: max-height .7s ease, visibility .3s ease, opacity .7s ease, margin-bottom .5s ease;
   }
 }
 
 .buttons-list.show {
+  visibility: visible;
   min-height: 100%;
   max-height: 1000px;
-  visibility: visible;
-
+  opacity: 1;
   margin-bottom: @logoTopMargin;
+}
+
+.menu-toggle {
+  @media @largeDesktops {
+    display: none;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    display: block;
+    transition: transform .5s ease;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    display: block;
+    transition: transform .5s ease;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    display: block;
+    transition: transform .5s ease;
+  }
+
+  @media @landscapePhonesSmaller {
+    display: block;
+    transition: transform .5s ease;
+  }
 }
 
 .buttons-list a:not(:first-child) {
