@@ -119,26 +119,6 @@
   justify-content: center;
   align-items: center;
   background: @globalBackground;
-
-  @media @largeDesktops {
-    padding-top: 120px;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    padding-top: 30px;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    padding-top: 30px;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    padding-top: 20px;
-  }
-
-  @media @landscapePhonesSmaller {
-    padding-top: 10px;
-  }
 }
 
 .answers_parent {
@@ -146,6 +126,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  line-height: 30px;
+  letter-spacing: 1px;
+
+  @media @largeDesktops {
+    padding: 120px;
+  }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
     padding: 120px;
@@ -174,9 +161,11 @@
 }
 
 .answer_div svg {
-  margin: 15px 40px 0 0;
+  margin: 7px 40px 0 0;
   align-self: flex-start;
   transition: transform 0.5s ease; /* Анимация переворота */
+  width: 30px;
+  height: 21px;
 }
 
 .answer_div svg path {
@@ -200,11 +189,44 @@
   flex-direction: column;
 
   @media @largeDesktops {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 25px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 25px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 25px;
+  }
+}
+
+.answer_span {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.response_span {
+  max-height: 0; /* Изначально задаем высоту 0 */
+  overflow: hidden; /* Скрываем содержимое, выходящее за пределы высоты */
+  transition: max-height 0.5s ease; /* Анимация изменения высоты */
+  margin-top: 20px;
+  margin-bottom: 25px;
+
+  @media @largeDesktops {
+    font-size: 20px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 20px;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
@@ -220,19 +242,6 @@
   }
 }
 
-.answer_span {
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.response_span {
-  max-height: 0; /* Изначально задаем высоту 0 */
-  overflow: hidden; /* Скрываем содержимое, выходящее за пределы высоты */
-  transition: max-height 0.5s ease; /* Анимация изменения высоты */
-  margin-top: 20px;
-  margin-bottom: 25px;
-}
-
 .answer_div.active .response_span {
   max-height: 500px; /* Автоматический расчет высоты содержимого */
 }
@@ -244,10 +253,31 @@
 .consultation {
   color: @white;
   font-family: @ubuntu;
-  font-size: 40px;
+  font-weight: bold;
   align-self: flex-start;
+  line-height: 40px;
+  letter-spacing: 0.838px;
+  margin-top: 30px;
 
-  margin-bottom: 100px;
+  @media @largeDesktops {
+    font-size: 30px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 25px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 25px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 25px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 25px;
+  }
 }
 
 /* endregion Консультация */

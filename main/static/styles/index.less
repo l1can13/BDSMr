@@ -53,10 +53,19 @@
   width: 100%;
   height: calc(100vh - @headerHeight);
   background: url("../source/common/background_image.png");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.studio_name {
+  margin-bottom: 20px;
+}
+
+.bdsmr_hashtag {
+  margin-bottom: 30px;
 }
 
 .studio_name, .bdsmr_hashtag {
@@ -120,6 +129,8 @@
 }
 
 .tattoo_studio {
+  margin-bottom: 20px;
+
   @media @largeDesktops {
     font-size: 40px;
   }
@@ -141,7 +152,10 @@
   }
 }
 
-.address {
+.info a {
+  color: @white;
+  font-family: @ubuntu;
+
   @media @largeDesktops {
     font-size: 32px;
   }
@@ -151,38 +165,20 @@
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    font-size: 23px;
+    font-size: 13px;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   @media @landscapePhonesSmaller {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
-.phone a {
-  @media @largeDesktops {
-    font-size: 24px;
-  }
-
-  @media @mediumDesktopsMin and @mediumDesktopsMax {
-    font-size: 24px;
-  }
-
-  @media @smallDesktopsMin and @smallDesktopsMax {
-    font-size: 13px;
-  }
-
-  @media @landscapePhonesMin and @landscapePhonesMax {
-    font-size: 13px;
-  }
-
-  @media @landscapePhonesSmaller {
-    font-size: 13px;
-  }
+.info a:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 /*#endregion Основная информация*/
@@ -330,6 +326,7 @@
 .inside_box h2 {
   font-family: @ubuntu;
   font-size: 20px;
+  font-weight: bold;
   color: @white;
   position: absolute;
   bottom: 7%;
@@ -368,9 +365,10 @@
 
 .masters_work h2 {
   font-family: @roboto;
+  font-weight: bold;
   font-size: @servicesTitleFontSize;
   color: @white;
-  margin: 102px 0 35px 0;
+  margin: 102px 0 55px 0;
   text-align: center;
 }
 
@@ -452,15 +450,18 @@
   color: @white;
   font-size: @servicesTitleFontSize;
   font-family: @roboto;
+  font-weight: bold;
   text-align: center;
 }
 
 .team_signature {
   font-family: @ubuntu;
   font-size: 24px;
-  margin: 18px 0 65px 0;
+  margin: 35px 0 45px 0;
   text-align: center;
   color: @white;
+  line-height: 40px;
+  letter-spacing: 0.525px;
 }
 
 .masters_first {
@@ -508,6 +509,7 @@
   color: @white;
   font-size: 40px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .portfolio {
@@ -604,8 +606,9 @@
   color: @white;
   font-size: 42px;
   font-family: @roboto;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .discounts_photos {
@@ -660,6 +663,7 @@
   color: @white;
   font-size: 32px;
   font-family: @ubuntu;
+  font-weight: bold;
   opacity: 0;
   transition: opacity 0.3s ease;
   cursor: pointer;
@@ -691,6 +695,7 @@
   color: @white;
   font-size: 42px;
   font-family: @roboto;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -725,6 +730,30 @@
 .left {
   width: 570px;
   background: @aboutBackground;
+
+  letter-spacing: 1px;
+
+  @media @largeDesktops {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 28px;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 28px;
+  }
+
+  @media @landscapePhonesSmaller {
+    font-size: 28px;
+  }
 }
 
 .inner_left {
@@ -743,7 +772,6 @@
 
 .about_text {
   font-family: @ubuntu;
-  font-size: 16px;
   color: @white;
 }
 
@@ -752,6 +780,25 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+
+  @media @largeDesktops {
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    margin: 25px 0;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    margin: 25px 0;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    margin: 25px 0;
+  }
+
+  @media @landscapePhonesSmaller {
+    margin: 25px 0;
+  }
 }
 
 .contacts {
@@ -760,23 +807,20 @@
   margin-left: 21px;
 }
 
-.work_time {
+.work_time, .phone_number {
   color: @white;
   font-family: @ubuntu;
-  font-size: 16px;
 }
 
 .card_address {
   color: @white;
   font-family: @ubuntu;
-  font-size: 20px;
   margin-bottom: 30px;
 }
 
 .leave_feedback {
   color: @white;
   font-family: @ubuntu;
-  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -808,8 +852,26 @@
 }
 
 .right {
-  width: 700px;
-  height: 617px;
+  @media @largeDesktops {
+    width: 700px;
+    height: 553px;
+  }
+
+  @media @mediumDesktopsMin and @mediumDesktopsMax {
+    display: none;
+  }
+
+  @media @smallDesktopsMin and @smallDesktopsMax {
+    display: none;
+  }
+
+  @media @landscapePhonesMin and @landscapePhonesMax {
+    display: none;
+  }
+
+  @media @landscapePhonesSmaller {
+    display: none;
+  }
 }
 
 .right iframe {
@@ -821,19 +883,19 @@
   }
 
   @media @mediumDesktopsMin and @mediumDesktopsMax {
-    margin-top: 30px;
+    display: none;
   }
 
   @media @smallDesktopsMin and @smallDesktopsMax {
-    margin-top: 30px;
+    display: none;
   }
 
   @media @landscapePhonesMin and @landscapePhonesMax {
-    margin-top: 30px;
+    display: none;
   }
 
   @media @landscapePhonesSmaller {
-    margin-top: 30px;
+    display: none;
   }
 }
 

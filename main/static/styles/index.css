@@ -5,10 +5,17 @@
   width: 100%;
   height: calc(100vh - 75px);
   background: url("../source/common/background_image.png");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.studio_name {
+  margin-bottom: 20px;
+}
+.bdsmr_hashtag {
+  margin-bottom: 30px;
 }
 .studio_name,
 .bdsmr_hashtag {
@@ -79,6 +86,9 @@
     font-size: 23px;
   }
 }
+.tattoo_studio {
+  margin-bottom: 20px;
+}
 @media (min-width: 1200px) {
   .tattoo_studio {
     font-size: 40px;
@@ -104,55 +114,37 @@
     font-size: 17px;
   }
 }
+.info a {
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+}
 @media (min-width: 1200px) {
-  .address {
+  .info a {
     font-size: 32px;
   }
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  .address {
+  .info a {
     font-size: 32px;
   }
 }
 @media (min-width: 769px) and (max-width: 979px) {
-  .address {
-    font-size: 23px;
-  }
-}
-@media (min-width: 640px) and (max-width: 768px) {
-  .address {
-    font-size: 15px;
-  }
-}
-@media (max-width: 639px) {
-  .address {
-    font-size: 15px;
-  }
-}
-@media (min-width: 1200px) {
-  .phone a {
-    font-size: 24px;
-  }
-}
-@media (min-width: 980px) and (max-width: 1199px) {
-  .phone a {
-    font-size: 24px;
-  }
-}
-@media (min-width: 769px) and (max-width: 979px) {
-  .phone a {
+  .info a {
     font-size: 13px;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
-  .phone a {
+  .info a {
     font-size: 13px;
   }
 }
 @media (max-width: 639px) {
-  .phone a {
+  .info a {
     font-size: 13px;
   }
+}
+.info a:not(:last-child) {
+  margin-bottom: 20px;
 }
 /*#endregion Основная информация*/
 /*#region Услуги*/
@@ -278,6 +270,7 @@
 .inside_box h2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
+  font-weight: bold;
   color: #FFFFFF;
   position: absolute;
   bottom: 7%;
@@ -310,9 +303,10 @@
 }
 .masters_work h2 {
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   font-size: 42px;
   color: #FFFFFF;
-  margin: 102px 0 35px 0;
+  margin: 102px 0 55px 0;
   text-align: center;
 }
 .creations {
@@ -397,14 +391,17 @@
   color: #FFFFFF;
   font-size: 42px;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   text-align: center;
 }
 .team_signature {
   font-family: 'Ubuntu', sans-serif;
   font-size: 24px;
-  margin: 18px 0 65px 0;
+  margin: 35px 0 45px 0;
   text-align: center;
   color: #FFFFFF;
+  line-height: 40px;
+  letter-spacing: 0.525px;
 }
 .masters_first {
   display: grid;
@@ -445,6 +442,7 @@
   color: #FFFFFF;
   font-size: 40px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 .portfolio {
   font-size: 14px;
@@ -525,8 +523,9 @@
   color: #FFFFFF;
   font-size: 42px;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .discounts_photos {
   display: grid;
@@ -582,6 +581,7 @@
   color: #FFFFFF;
   font-size: 32px;
   font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
   opacity: 0;
   transition: opacity 0.3s ease;
   cursor: pointer;
@@ -607,6 +607,7 @@
   color: #FFFFFF;
   font-size: 42px;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -644,6 +645,34 @@
 .left {
   width: 570px;
   background: #1E1E1E;
+  letter-spacing: 1px;
+}
+@media (min-width: 1200px) {
+  .left {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .left {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .left {
+    font-size: 28px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .left {
+    font-size: 28px;
+  }
+}
+@media (max-width: 639px) {
+  .left {
+    font-size: 28px;
+  }
 }
 .inner_left {
   padding: 40px;
@@ -659,7 +688,6 @@
 }
 .about_text {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
   color: #FFFFFF;
 }
 .vk {
@@ -668,26 +696,44 @@
   justify-content: flex-start;
   align-items: center;
 }
+@media (min-width: 980px) and (max-width: 1199px) {
+  .vk {
+    margin: 25px 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .vk {
+    margin: 25px 0;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .vk {
+    margin: 25px 0;
+  }
+}
+@media (max-width: 639px) {
+  .vk {
+    margin: 25px 0;
+  }
+}
 .contacts {
   display: flex;
   flex-direction: column;
   margin-left: 21px;
 }
-.work_time {
+.work_time,
+.phone_number {
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
 }
 .card_address {
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
   margin-bottom: 30px;
 }
 .leave_feedback {
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
   margin-bottom: 20px;
 }
 .maps {
@@ -713,9 +759,31 @@
   justify-content: center;
   align-items: center;
 }
-.right {
-  width: 700px;
-  height: 617px;
+@media (min-width: 1200px) {
+  .right {
+    width: 700px;
+    height: 553px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .right {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .right {
+    display: none;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .right {
+    display: none;
+  }
+}
+@media (max-width: 639px) {
+  .right {
+    display: none;
+  }
 }
 .right iframe {
   width: 100%;
@@ -724,22 +792,22 @@
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   .right iframe {
-    margin-top: 30px;
+    display: none;
   }
 }
 @media (min-width: 769px) and (max-width: 979px) {
   .right iframe {
-    margin-top: 30px;
+    display: none;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
   .right iframe {
-    margin-top: 30px;
+    display: none;
   }
 }
 @media (max-width: 639px) {
   .right iframe {
-    margin-top: 30px;
+    display: none;
   }
 }
 /*#endregion О нашем салоне*/

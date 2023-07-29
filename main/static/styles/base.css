@@ -45,6 +45,7 @@ a {
 }
 html {
   scroll-behavior: smooth;
+  background: #0F1010;
 }
 /* endregion Скролл */
 /*#region Header*/
@@ -163,6 +164,7 @@ header {
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
+  letter-spacing: 1px;
 }
 @media (min-width: 1200px) {
   .buttons-list {
