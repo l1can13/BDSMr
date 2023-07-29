@@ -1,0 +1,226 @@
+/*#region Переменные*/
+/*#endregion Переменные*/
+/*#region Обнуление*/
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  content: none;
+}
+/*#endregion Обнуление*/
+/* region Скролл */
+/* Применить стили к корневому элементу <body> */
+::-webkit-scrollbar {
+  width: 7px;
+  /* Ширина скроллбара */
+  background-color: #0F1010;
+  /* Фоновый цвет скроллбара (полупрозрачный серый) */
+}
+/* Применить стили к треку скроллбара */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Прозрачный фон трека скроллбара */
+}
+/* Применить стили к ползунку скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  /* Цвет ползунка скроллбара (серый) */
+  border-radius: 6px;
+  /* Скругленные углы ползунка */
+}
+/* Применить стили к активному ползунку скроллбара */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+  /* Изменение цвета ползунка при наведении (более светлый серый) */
+}
+html {
+  scroll-behavior: smooth;
+}
+/* endregion Скролл */
+/*#region Header*/
+header {
+  width: 100%;
+  background: #040404;
+}
+@media (min-width: 1200px) {
+  header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 639px) {
+  header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin-left: 42px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .logo {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .logo {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .logo {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 639px) {
+  .logo {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo img {
+    width: 210px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .logo img {
+    width: 150px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .logo img {
+    width: 150px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .logo img {
+    width: 150px;
+  }
+}
+@media (max-width: 639px) {
+  .logo img {
+    width: 150px;
+  }
+}
+.buttons-list {
+  list-style-type: none;
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+@media (min-width: 1200px) {
+  .buttons-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 78px;
+    align-items: center;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .buttons-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .buttons-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .buttons-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+  }
+}
+@media (max-width: 639px) {
+  .buttons-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .buttons-list a:not(:first-child) {
+    margin-left: 45px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .buttons-list a:not(:first-child) {
+    margin-top: 45px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .buttons-list a:not(:first-child) {
+    margin-top: 45px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .buttons-list a:not(:first-child) {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 639px) {
+  .buttons-list a:not(:first-child) {
+    margin-top: 45px;
+  }
+}
+/*#endregion Header*/
+/*# sourceMappingURL=base.css.map */
