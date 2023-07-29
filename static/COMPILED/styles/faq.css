@@ -1,0 +1,251 @@
+/*#region Переменные*/
+/*#endregion Переменные*/
+/* region Шапка */
+.answers {
+  background-size: cover;
+  /* Затемненный фон */
+  background: rgba(0, 0, 0, 0.9) url("/static/source/common/background_faq.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .answers {
+    height: calc(100vh - 75px);
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .answers {
+    height: 500px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .answers {
+    height: 500px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .answers {
+    height: 300px;
+  }
+}
+@media (max-width: 639px) {
+  .answers {
+    height: 300px;
+  }
+}
+.answers_title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (min-width: 1200px) {
+  .answers_title {
+    font-size: 64px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .answers_title {
+    font-size: 46px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .answers_title {
+    font-size: 32px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .answers_title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 639px) {
+  .answers_title {
+    font-size: 24px;
+  }
+}
+/* endregion Шапка */
+/* region Меню с вопросами */
+.answers_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0F1010;
+}
+.answers_parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+@media (min-width: 1200px) {
+  .answers_parent {
+    padding: 120px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .answers_parent {
+    padding: 120px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .answers_parent {
+    padding: 120px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .answers_parent {
+    padding: 120px;
+  }
+}
+@media (max-width: 639px) {
+  .answers_parent {
+    padding: 120px;
+  }
+}
+.answer_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.answer_div svg {
+  margin: 7px 40px 0 0;
+  align-self: flex-start;
+  transition: transform 0.5s ease;
+  /* Анимация переворота */
+  width: 30px;
+  height: 21px;
+}
+.answer_div svg path {
+  transition: fill 0.5s ease;
+  /* Анимация изменения цвета заливки */
+}
+.answer_div.active svg path {
+  fill: #FFFFFF;
+  /* Изменение цвета заливки на белый */
+}
+.answer_div.active svg {
+  transform: rotate(180deg);
+  /* Поворот на 180 градусов */
+  fill: #FFFFFF;
+  /* Изменение цвета на белый */
+}
+.spans {
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .spans {
+    font-size: 30px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .spans {
+    font-size: 25px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .spans {
+    font-size: 25px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .spans {
+    font-size: 25px;
+  }
+}
+@media (max-width: 639px) {
+  .spans {
+    font-size: 25px;
+  }
+}
+.answer_span {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.response_span {
+  max-height: 0;
+  /* Изначально задаем высоту 0 */
+  overflow: hidden;
+  /* Скрываем содержимое, выходящее за пределы высоты */
+  transition: max-height 0.5s ease;
+  /* Анимация изменения высоты */
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+@media (min-width: 1200px) {
+  .response_span {
+    font-size: 20px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .response_span {
+    font-size: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .response_span {
+    font-size: 20px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .response_span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 639px) {
+  .response_span {
+    font-size: 20px;
+  }
+}
+.answer_div.active .response_span {
+  max-height: 500px;
+  /* Автоматический расчет высоты содержимого */
+}
+/* endregion Меню с вопросами */
+/* region Консультация */
+.consultation {
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  align-self: flex-start;
+  line-height: 40px;
+  letter-spacing: 0.838px;
+  margin-top: 30px;
+}
+@media (min-width: 1200px) {
+  .consultation {
+    font-size: 30px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .consultation {
+    font-size: 25px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .consultation {
+    font-size: 25px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .consultation {
+    font-size: 25px;
+  }
+}
+@media (max-width: 639px) {
+  .consultation {
+    font-size: 25px;
+  }
+}
+/* endregion Консультация */
