@@ -9,16 +9,3 @@ bookSessionButton.addEventListener('click', (event) => {
         scrollToElement(aboutContainer);
     }
 });
-
-const headerButtons = document.querySelector(".buttons-list");
-
-// Функция для отображения/скрытия button-list
-function toggleMenu() {
-    headerButtons.classList.toggle("show");
-}
-
-// Обработка события нажатия на логотип
-document.querySelector(".logo").addEventListener("click", function (event) {
-    event.preventDefault();
-    toggleMenu();
-});
