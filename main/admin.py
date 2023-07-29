@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from master.models import Master, PortfolioFiles
+
+admin.site.register(Master)
+admin.site.register(PortfolioFiles)

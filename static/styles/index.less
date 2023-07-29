@@ -1,0 +1,902 @@
+/*#region Переменные*/
+
+// Colors ------------------------------------------------------------------------------------------
+@black: #040404;
+@white: #FFFFFF;
+@buttonOutline: #565656;
+@aboutBackground: #1E1E1E;
+@globalBackground: #0F1010;
+@masterDescription: #3A3A3A;
+@viewPortfolio: #797979;
+
+// Fonts -------------------------------------------------------------------------------------------
+@ubuntu: 'Ubuntu', sans-serif;
+@holtwood: 'Holtwood One SC', serif;
+@roboto: 'Roboto', sans-serif;
+@inter: 'Inter', sans-serif;
+
+// Displays ----------------------------------------------------------------------------------------
+@largeDesktops: ~"(min-width: 1200px)";
+
+@forGridDesktopMax: ~"(max-width: 1375px)";
+
+@mediumDesktopsMin: ~"(min-width: 980px)";
+@mediumDesktopsMax: ~"(max-width: 1199px)";
+
+@smallDesktopsMin: ~"(min-width: 769px)";
+@smallDesktopsMax: ~"(max-width: 979px)";
+
+@landscapePhonesMin: ~"(min-width: 640px)";
+@landscapePhonesMax: ~"(max-width: 768px)";
+
+@landscapePhonesSmaller: ~"(max-width: 639px)";
+
+// Margins ---------------------------------------------------------------------------------------
+@logoLeftMargin: 42px;
+@logoTopMargin: 25px;
+@headerButtonsRightMargin: 78px;
+@headerButtonsHorizontalMargin: 45px;
+@headerButtonsVerticalMargin: 45px;
+
+// Sizes -----------------------------------------------------------------------------------------
+@headerHeight: 75px;
+@logoLargeWidth: 210px;
+@logoSmallWidth: 150px;
+@headerButtonFontSize: 20px;
+@servicesTitleFontSize: 42px;
+
+/*#endregion Переменные*/
+
+/*#region Основная информация*/
+
+.info {
+  width: 100%;
+  height: calc(100vh - @headerHeight);
+  background: url("../source/common/background_image.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.studio_name {
+  margin-bottom: 20px;
+}
+
+.bdsmr_hashtag {
+  margin-bottom: 30px;
+}
+
+.studio_name, .bdsmr_hashtag {
+  color: @white;
+  font-family: @holtwood;
+  text-align: center;
+}
+
+.tattoo_studio, .address, .phone {
+  color: @white;
+  font-family: @ubuntu;
+  text-align: center;
+}
+
+.studio_name {
+  letter-spacing: 1.24px;
+
+  @media only screen and @largeDesktops {
+    font-size: 80px;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 80px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 60px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 45px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    font-size: 30px;
+  }
+}
+
+.bdsmr_hashtag {
+  letter-spacing: .84px;
+
+  @media only screen and @largeDesktops {
+    font-size: 48px;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 48px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 28px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 23px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    font-size: 23px;
+  }
+}
+
+.tattoo_studio {
+  margin-bottom: 20px;
+
+  @media only screen and @largeDesktops {
+    font-size: 40px;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 40px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 20px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 17px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    font-size: 17px;
+  }
+}
+
+.info a {
+  color: @white;
+  font-family: @ubuntu;
+
+  @media only screen and @largeDesktops {
+    font-size: 32px;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 32px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 13px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 13px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    font-size: 13px;
+  }
+}
+
+.info a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*#endregion Основная информация*/
+
+/*#region Услуги*/
+
+.services {
+  width: 100%;
+  height: 856px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: @roboto;
+  background: @globalBackground;
+
+  @media only screen and @largeDesktops {
+    padding: 0 150px;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    padding: 0 30px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 60px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 45px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    font-size: 30px;
+  }
+}
+
+.services_title {
+  color: @white;
+  font-size: @servicesTitleFontSize;
+  font-weight: bold;
+  letter-spacing: 0.84px;
+  margin-top: 105px;
+}
+
+/*#region Слайдер*/
+
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+  position: relative;
+}
+
+
+.slick-list::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Конкретный слайдер */
+.slider {
+  padding: 0 50px;
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .slider {
+    padding: 0 20px;
+  }
+}
+
+.slider .slick-arrow {
+  width: 30px;
+  height: 70px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../source/slider/arrow_l.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url('../source/slider/arrow_r.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slick-next:before, .slick-prev:before {
+  content: '';
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: @black;
+  border: 2px solid @white;
+}
+
+.slider__item {
+  padding: 0 5px;
+}
+
+.slider__item img {
+  max-width: 100%;
+  position: relative;
+  z-index: -2;
+}
+
+.slider__item.slick-center {
+
+}
+
+.inside_box {
+  position: relative;
+  -webkit-transition: .3s ease;
+  cursor: pointer;
+}
+
+.inside_box h2 {
+  font-family: @ubuntu;
+  font-size: 20px;
+  font-weight: bold;
+  color: @white;
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+}
+
+/*#endregion Слайдер*/
+
+.book_session_button {
+  margin-top: 52px;
+  padding: 20px 55px;
+  background: @black;
+  color: @white;
+  font-family: @roboto;
+  font-size: 32px;
+  border: 5px solid @buttonOutline;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/*#endregion Услуги*/
+
+/*#region Работы наших мастеров*/
+
+.masters_work {
+  background: @globalBackground;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.masters_work h2 {
+  font-family: @roboto;
+  font-weight: bold;
+  font-size: @servicesTitleFontSize;
+  color: @white;
+  margin: 102px 0 55px 0;
+  text-align: center;
+}
+
+.creations {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  @media only screen and @largeDesktops {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+.watch_more {
+  background: transparent;
+  color: @white;
+  font-family: @ubuntu;
+  font-size: 32px;
+  cursor: pointer;
+  margin-top: 10px;
+  //grid-column: 3;
+
+  @media only screen and @largeDesktops {
+    grid-column: 3;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-column: 2;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    grid-column: 1;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    grid-column: 1;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    grid-column: 1;
+  }
+}
+
+/*#endregion Работы наших мастеров*/
+
+/*#region Наша команда*/
+
+.team {
+  background: @globalBackground;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.team h2 {
+  color: @white;
+  font-size: @servicesTitleFontSize;
+  font-family: @roboto;
+  font-weight: bold;
+  text-align: center;
+}
+
+.team_signature {
+  font-family: @ubuntu;
+  font-size: 24px;
+  margin: 35px 0 45px 0;
+  text-align: center;
+  color: @white;
+  line-height: 40px;
+  letter-spacing: 0.525px;
+}
+
+.masters_first {
+  display: grid;
+  gap: 25px;
+  justify-content: center;
+  align-content: center;
+}
+
+.masters_first > div {
+  position: relative;
+}
+
+.masters_first img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.masters_first div:hover img {
+  filter: brightness(0.4);
+}
+
+.masters_first > div:hover div {
+  opacity: 1;
+}
+
+.masters_first > div div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  font-family: @inter;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.master_name {
+  color: @white;
+  font-size: 40px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.portfolio {
+  font-size: 14px;
+  color: @viewPortfolio;
+  cursor: pointer;
+}
+
+/* Large Desktops */
+@media only screen and @largeDesktops {
+  .masters_first {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  #master1, #master2, #master3 {
+    grid-row-start: 1;
+    grid-column: span 4;
+  }
+
+  #master4 {
+    grid-row-start: 2;
+    grid-column: 3 / span 4;
+  }
+
+  #master5 {
+    grid-row-start: 2;
+    grid-column: 7 / span 4;
+  }
+}
+
+/* Medium Desktops */
+@media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+  .masters_first {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  #master1 {
+    grid-row-start: 1;
+    grid-column: 2 / span 5;
+  }
+
+  #master2 {
+    grid-row-start: 1;
+    grid-column: 7 / span 5;
+  }
+
+  #master3 {
+    grid-row-start: 2;
+    grid-column: 2 / span 5;
+  }
+
+  #master4 {
+    grid-row-start: 2;
+    grid-column: 7 / span 5;
+  }
+
+  #master5 {
+    grid-row-start: 3;
+    grid-column: 4 / span 6;
+  }
+}
+
+/* Small Desktops */
+@media only screen and @smallDesktopsMin and @smallDesktopsMax {
+  .masters_first div {
+    grid-column: span 12;
+  }
+}
+
+/* Landscape Phones */
+@media only screen and @landscapePhonesMin and @landscapePhonesMax,
+@landscapePhonesSmaller {
+  .masters_first div {
+    grid-column: span 12;
+  }
+}
+
+/*#endregion Наша команда*/
+
+/*#region Скидки и акции*/
+
+.discounts {
+  background: @globalBackground;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.discounts h2 {
+  color: @white;
+  font-size: 42px;
+  font-family: @roboto;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.discounts_photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 25px;
+
+  @media only screen and @largeDesktops {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+.discounts_photos div {
+  position: relative;
+}
+
+.discounts_photos img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.discounts_photos span {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: @white;
+  font-size: 32px;
+  font-family: @ubuntu;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.discounts_photos div:hover img {
+  filter: brightness(0.4);
+}
+
+.discounts_photos div:hover span {
+  opacity: 1;
+}
+
+/*#endregion Наша команда*/
+
+/*#region О нашем салоне*/
+
+.about {
+  background: @globalBackground;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 140px;
+  height: 100%;
+}
+
+.about h2 {
+  color: @white;
+  font-size: 42px;
+  font-family: @roboto;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 160px;
+
+  @media only screen and @largeDesktops {
+    flex-direction: row;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    flex-direction: column;
+  }
+}
+
+.left {
+  width: 570px;
+  background: @aboutBackground;
+
+  letter-spacing: 1px;
+
+  @media only screen and @largeDesktops {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    font-size: 28px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    font-size: 28px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    font-size: 28px;
+  }
+}
+
+.inner_left {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-family: @holtwood;
+  font-size: 32px;
+  letter-spacing: 1.25px;
+  line-height: 48px;
+  color: @white;
+}
+
+.about_text {
+  font-family: @ubuntu;
+  color: @white;
+}
+
+.vk {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media only screen and @largeDesktops {
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    margin: 25px 0;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    margin: 25px 0;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    margin: 25px 0;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    margin: 25px 0;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px;
+}
+
+.work_time, .phone_number {
+  color: @white;
+  font-family: @ubuntu;
+}
+
+.card_address {
+  color: @white;
+  font-family: @ubuntu;
+  margin-bottom: 30px;
+}
+
+.leave_feedback {
+  color: @white;
+  font-family: @ubuntu;
+  margin-bottom: 20px;
+}
+
+.maps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.two_gis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yandex svg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.yandex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  @media only screen and @largeDesktops {
+    width: 700px;
+    height: 553px;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    display: none;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    display: none;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    display: none;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    display: none;
+  }
+}
+
+.right iframe {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%) invert(100%) contrast(67%);
+
+  @media only screen and @largeDesktops {
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    display: none;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    display: none;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    display: none;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    display: none;
+  }
+}
+
+/*#endregion О нашем салоне*/

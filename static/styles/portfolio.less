@@ -1,0 +1,383 @@
+/*#region Переменные*/
+
+// Colors ------------------------------------------------------------------------------------------
+@black: #040404;
+@white: #FFFFFF;
+@buttonOutline: #565656;
+@aboutBackground: #1E1E1E;
+@globalBackground: #0F1010;
+@masterDescription: #3A3A3A;
+@viewPortfolio: #797979;
+
+// Fonts -------------------------------------------------------------------------------------------
+@ubuntu: 'Ubuntu', sans-serif;
+@holtwood: 'Holtwood One SC', serif;
+@roboto: 'Roboto', sans-serif;
+@inter: 'Inter', sans-serif;
+
+// Displays ----------------------------------------------------------------------------------------
+@largeDesktops: ~"(min-width: 1200px)";
+
+@forGridDesktopMax: ~"(max-width: 1375px)";
+
+@mediumDesktopsMin: ~"(min-width: 980px)";
+@mediumDesktopsMax: ~"(max-width: 1199px)";
+
+@smallDesktopsMin: ~"(min-width: 769px)";
+@smallDesktopsMax: ~"(max-width: 979px)";
+
+@landscapePhonesMin: ~"(min-width: 640px)";
+@landscapePhonesMax: ~"(max-width: 768px)";
+
+@landscapePhonesSmaller: ~"(max-width: 639px)";
+
+// Margins ---------------------------------------------------------------------------------------
+@logoLeftMargin: 42px;
+@logoTopMargin: 25px;
+@headerButtonsRightMargin: 78px;
+@headerButtonsHorizontalMargin: 45px;
+@headerButtonsVerticalMargin: 45px;
+
+// Sizes -----------------------------------------------------------------------------------------
+@headerHeight: 75px;
+@logoLargeWidth: 210px;
+@logoSmallWidth: 150px;
+@headerButtonFontSize: 20px;
+@servicesTitleFontSize: 42px;
+
+/*#endregion Переменные*/
+
+/* region Блок с фото */
+
+.parent_block {
+  background: @globalBackground;
+  font-family: @roboto;
+  color: @white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px 0 100px 0;
+}
+
+/* region Первый блок */
+
+.first_block {
+  display: flex;
+
+  margin-bottom: 40px;
+
+  @media only screen and @largeDesktops {
+    flex-direction: row;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    flex-direction: column;
+  }
+}
+
+.first_block__left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+
+  margin-right: 40px;
+}
+
+.first_block__right {
+  display: grid;
+  gap: 40px;
+}
+
+.first_block__right span {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 110px;
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    margin-top: 40px;
+  }
+}
+
+/* endregion Первый блок */
+
+/* region Второй блок */
+
+.second_block {
+  margin-bottom: 40px;
+
+  @media only screen and @largeDesktops {
+    display: flex;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    display: none;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    display: none;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    display: none;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    display: none;
+  }
+}
+
+/* endregion Второй блок */
+
+/* region Третий блок */
+
+.third_block {
+  display: grid;
+  gap: 47px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin-bottom: 40px;
+
+  @media only screen and @largeDesktops {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+/* endregion Третий блок */
+
+/* region Четвертый блок */
+
+.fourth_block {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+
+  margin-bottom: 50px;
+
+  @media only screen and @largeDesktops {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/* endregion Четвертый блок */
+
+/* region Пятый блок */
+
+.fifth_block {
+  display: grid;
+  gap: 47px;
+
+  margin-bottom: 40px;
+
+  @media only screen and @largeDesktops {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+/* endregion Пятый блок */
+
+/* region Шестой блок */
+
+.sixth_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px;
+
+  @media only screen and @largeDesktops {
+    flex-direction: row;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    flex-direction: column;
+  }
+}
+
+.sixth_block__left {
+  display: grid;
+  gap: 47px;
+  grid-template-rows: 1fr 1fr;
+
+  margin-right: 47px;
+}
+
+.sixth_block__right {
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    margin-top: 40px;
+  }
+}
+
+/* endregion Шестой блок */
+
+/* region Седьмой блок */
+
+.seventh_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and @largeDesktops {
+    flex-direction: row;
+  }
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    flex-direction: column;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    flex-direction: column;
+  }
+}
+
+.seventh_block__left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seventh_block__right {
+  display: grid;
+  gap: 47px;
+  grid-template-rows: 1fr 1fr;
+
+  margin-left: 64px;
+
+  @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @smallDesktopsMin and @smallDesktopsMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @landscapePhonesMin and @landscapePhonesMax {
+    margin-top: 40px;
+  }
+
+  @media only screen and @landscapePhonesSmaller {
+    margin-top: 40px;
+  }
+}
+
+/* endregion Седьмой блок */
+
+/* endregion Блок с фото */
