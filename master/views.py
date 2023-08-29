@@ -13,10 +13,7 @@ class MasterDetailView(DetailView):
         context = super().get_context_data(**kwargs)
         master = self.get_object()
 
-        portfolio_files = list(PortfolioFiles.objects.filter(master=master))
-
-        context['portfolio_files'] = portfolio_files
-
         context['logo_image'] = 'source/common/logo.png'
+        context['master'] = master
 
         return dict(context)

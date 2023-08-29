@@ -33,16 +33,16 @@
     height: 300px;
   }
 }
-.name,
-.portfolio {
+.name {
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
   font-size: 40px;
+  font-weight: bold;
   align-self: flex-end;
-  margin-right: 200px;
-}
-.portfolio {
-  font-weight: 700;
+  margin: 0 200px 100px 0;
+  box-shadow: 0 0 65px 95px rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 25px;
 }
 /*#endregion Introduce*/
 /* region Блоки портфолио */
