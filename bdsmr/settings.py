@@ -23,8 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True  # dev
-# DEBUG = False  # prod
+# DEBUG = True  # dev
+DEBUG = False  # prod
 
 ALLOWED_HOSTS = ['www.bdsmr.ru', 'bdsmr.ru', '127.0.0.1', 'localhost']
 
@@ -144,4 +144,4 @@ STATICFILES_FINDERS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
