@@ -413,7 +413,7 @@
   position: relative;
 }
 .masters_first img {
-  width: 100%;
+  max-width: 379px;
   height: auto;
   transition: filter 0.3s ease;
   cursor: pointer;
@@ -452,61 +452,29 @@
 /* Large Desktops */
 @media only screen and (min-width: 1200px) {
   .masters_first {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-  }
-  #master1,
-  #master2,
-  #master3 {
-    grid-row-start: 1;
-    grid-column: span 4;
-  }
-  #master4 {
-    grid-row-start: 2;
-    grid-column: 3 / span 4;
-  }
-  #master5 {
-    grid-row-start: 2;
-    grid-column: 7 / span 4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 /* Medium Desktops */
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
   .masters_first {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-  }
-  #master1 {
-    grid-row-start: 1;
-    grid-column: 2 / span 5;
-  }
-  #master2 {
-    grid-row-start: 1;
-    grid-column: 7 / span 5;
-  }
-  #master3 {
-    grid-row-start: 2;
-    grid-column: 2 / span 5;
-  }
-  #master4 {
-    grid-row-start: 2;
-    grid-column: 7 / span 5;
-  }
-  #master5 {
-    grid-row-start: 3;
-    grid-column: 4 / span 6;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 /* Small Desktops */
 @media only screen and (min-width: 769px) and (max-width: 979px) {
-  .masters_first div {
-    grid-column: span 12;
+  .masters_first {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 /* Landscape Phones */
 @media only screen and (min-width: 640px) and (max-width: 768px), (max-width: 639px) {
-  .masters_first div {
-    grid-column: span 12;
+  .masters_first {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 /*#endregion Наша команда*/

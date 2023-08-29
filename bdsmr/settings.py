@@ -23,8 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True # dev
-DEBUG = False  # prod
+DEBUG = True  # dev
+# DEBUG = False  # prod
 
 ALLOWED_HOSTS = ['www.bdsmr.ru', 'bdsmr.ru', '127.0.0.1', 'localhost']
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'livereload',
+    'multiupload',
     'django.contrib.staticfiles',
 ]
 
@@ -140,8 +141,7 @@ STATICFILES_FINDERS = (
     'static_precompiler.finders.StaticPrecompilerFinder',
 )
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'master' / 'static',
-]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATIC_ROOT = BASE_DIR / 'static'
