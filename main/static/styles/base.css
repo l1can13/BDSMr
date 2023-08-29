@@ -17,6 +17,9 @@ a {
   box-sizing: border-box;
   content: none;
 }
+:root {
+  color-scheme: only light;
+}
 /*#endregion Обнуление*/
 /* region Скролл */
 /* Применить стили к корневому элементу <body> */
