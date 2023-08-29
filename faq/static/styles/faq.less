@@ -157,15 +157,20 @@
   justify-content: flex-start;
   align-items: center;
 
-  cursor: pointer;
+  cursor: default;
 }
 
 .answer_div svg {
   margin: 7px 40px 0 0;
   align-self: flex-start;
   transition: transform 0.5s ease; /* Анимация переворота */
-  width: 30px;
-  height: 21px;
+  cursor: pointer;
+
+  min-width: 60px;
+  max-width: 60px;
+
+  min-height: 21px;
+  max-height: 21px;
 }
 
 .answer_div svg path {
@@ -212,6 +217,7 @@
 .answer_span {
   font-weight: 700;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .response_span {
@@ -253,7 +259,6 @@
 .consultation {
   color: @white;
   font-family: @ubuntu;
-  font-weight: bold;
   align-self: flex-start;
   line-height: 40px;
   letter-spacing: 0.838px;
@@ -264,19 +269,19 @@
   }
 
   @media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   @media only screen and @smallDesktopsMin and @smallDesktopsMax {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   @media only screen and @landscapePhonesMin and @landscapePhonesMax {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   @media only screen and @landscapePhonesSmaller {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 
