@@ -89,11 +89,11 @@
             <div><img src="static/source/masters_work/photo9.png"></div>
 
 
-                <button class="watch_more">
-                    <a href="/portfolio" target="_blank">
-                        Посмотреть еще
-                    </a>
-                </button>
+            <button class="watch_more">
+                <a href="/portfolio" target="_blank">
+                    Посмотреть еще
+                </a>
+            </button>
 
         </div>
     </div>
@@ -108,47 +108,17 @@
         </span>
 
         <div class="masters_first">
-            <div id="master1">
-                <a href="/master/julia">
-                    <img src="static/source/masters/julia.png">
-
-                    <div class="caption">
-                        <span class="master_name">Юлия</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
-                </a>
-            </div>
-
-            <div id="master2">
-                <a href="/master/nikolai">
-                    <img src="static/source/masters/nikolai.png">
-
-                    <div class="caption">
-                        <span class="master_name">Николай</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
-                </a>
-            </div>
-            <div id="master3">
-                <a href="/master/azat">
-                    <img src="static/source/masters/azat.png">
-
-                    <div class="caption">
-                        <span class="master_name">Азат</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
-                </a>
-            </div>
-            <div id="master4">
-                <a href="/master/natalia">
-                    <img src="static/source/masters/natalia.png">
-
-                    <div class="caption">
-                        <span class="master_name">Наталья</span>
-                        <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                    </div>
-                </a>
-            </div>
+            {% for master in masters %}
+                <div class="master" id="master{{ master.id }}">
+                    <a href="/master/{{ master.alias }}">
+                        <img src="{{ master.avatar.url }}">
+                        <div class="caption">
+                            <span class="master_name">{{ master.name }}</span>
+                            <span class="portfolio">ПОСМОТРЕТЬ ПОРТФОЛИО</span>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
         </div>
     </div>
 
