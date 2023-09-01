@@ -403,24 +403,13 @@
   line-height: 40px;
   letter-spacing: 0.525px;
 }
-/* Обновленные стили для .group и .masters_first */
-.group {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  /* Выровнять элементы вверху */
-  gap: 25px;
-  /* Расстояние между элементами */
-  width: 100%;
-  box-sizing: border-box;
-}
+/* Стили для .masters_first контейнера */
 .masters_first {
   display: flex;
   flex-wrap: wrap;
-  /* Разрешить перенос элементов на следующую строку */
-  justify-content: flex-start;
-  gap: 25px;
-  /* Расстояние между элементами */
+  justify-content: center;
+  gap: 20px;
+  /* Пространство между элементами */
 }
 .master {
   position: relative;
