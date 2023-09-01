@@ -464,33 +464,43 @@
   letter-spacing: 0.525px;
 }
 
-.masters_first {
-  display: grid;
-  gap: 25px;
+/* Обновленные стили для .group и .masters_first */
+.group {
+  display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: flex-start; /* Выровнять элементы вверху */
+  gap: 25px; /* Расстояние между элементами */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.masters_first > div {
+.masters_first {
+  display: flex;
+  flex-wrap: wrap; /* Разрешить перенос элементов на следующую строку */
+  justify-content: flex-start;
+  gap: 25px; /* Расстояние между элементами */
+}
+
+.master {
   position: relative;
 }
 
-.masters_first img {
+.master img {
   max-width: 379px;
   height: auto;
   transition: filter 0.3s ease;
   cursor: pointer;
 }
 
-.masters_first div:hover img {
+.master:hover img {
   filter: brightness(0.4);
 }
 
-.masters_first > div:hover div {
+.master:hover div {
   opacity: 1;
 }
 
-.masters_first > div div {
+.master div {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -516,39 +526,6 @@
   font-size: 14px;
   color: @viewPortfolio;
   cursor: pointer;
-}
-
-/* Large Desktops */
-@media only screen and @largeDesktops {
-  .masters_first {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-/* Medium Desktops */
-@media only screen and @mediumDesktopsMin and @mediumDesktopsMax {
-  .masters_first {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-/* Small Desktops */
-@media only screen and @smallDesktopsMin and @smallDesktopsMax {
-  .masters_first {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-}
-
-/* Landscape Phones */
-@media only screen and @landscapePhonesMin and @landscapePhonesMax,
-@landscapePhonesSmaller {
-  .masters_first {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
 }
 
 ///* Large Desktops */

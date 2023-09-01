@@ -12,6 +12,7 @@ class Master(models.Model):
         validators=[MaxLengthValidator(100)]
     )
     avatar = models.ImageField(verbose_name='avatar', upload_to='master/avatar')
+    background = models.ImageField(verbose_name='background', upload_to='master/background')
     alias = models.CharField('alias', max_length=50)
     phone_number = models.CharField('phone_number', max_length=12)
     vk = models.CharField('vk', max_length=100)
