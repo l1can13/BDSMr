@@ -413,8 +413,6 @@
 }
 .master {
   position: relative;
-  margin-bottom: 20px;
-  /* Пространство между строками */
 }
 .master img {
   max-width: 379px;
