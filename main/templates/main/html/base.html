@@ -41,12 +41,19 @@
 
     <link rel="stylesheet" href="{% static "styles/reset.less"|compile %}"/>
     <link rel="stylesheet" href="{% static "styles/base.less"|compile %}"/>
+    <link type="image/x-icon" href="../static/source/common/logo.ico" rel="icon">
 
     {% block css %}
 
     {% endblock %}
 </head>
 <body>
+
+<div class="preloader">
+    <div class="loader">
+    </div>
+</div>
+
 <header class="header">
     <a class="logo" href="/">
         <img src="{% static logo_image %}" alt="Логотип">
